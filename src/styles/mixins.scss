@@ -1,0 +1,17 @@
+@mixin flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin flex-grow {
+  display: flex;
+  flex-grow: 1;
+}

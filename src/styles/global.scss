@@ -1,0 +1,29 @@
+@import './mixins';
+
+// Here you put all global css rules.
+
+html, body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+@media (max-width: 920px) {
+  html, body {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 620px) {
+  html, body {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  html, body {
+    font-size: 6px;
+  }
+}
