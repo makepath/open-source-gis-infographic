@@ -1,0 +1,132 @@
+@import '../../styles/mixins';
+
+.popup-wrapper {
+  position: absolute;
+  width: 100%;
+  max-width: 580px;
+  margin-top: 7rem;
+  border: 6px solid #1f285c;
+  z-index: 1000;
+  &.right {
+    right: 0;
+    .box {
+      right: 5.25rem;
+      left: unset;
+    }
+  }
+  .close {
+    @include flex-container;
+    position: absolute;
+    top: calc(-1.5rem - 3px);
+    right: calc(-1.5rem - 3px);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border: 6px solid #1f285c;
+    background-color: white;
+    color: #1f285c;
+    padding: 0;
+    background-image: url('../images/close.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    cursor: pointer;
+  }
+  .box {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    top: -3.125rem;
+    left: 4.5rem;
+    background: linear-gradient(-45deg, transparent 50%, white 50%);
+    transform: rotateX(45deg) rotateZ(45deg);
+    border-top: 6px solid #1f285c;
+    border-left: 6px solid #1f285c;
+    z-index: -1;
+  }
+  .tool-popup {
+    @include flex-column;
+    background-color: white;
+    padding: 1rem;
+    color: #1f285c;
+    z-index: 10;
+    img {
+      max-width: 100%;
+      max-height: 10rem;
+    }
+    .content {
+      padding: 1rem;
+      z-index: 100;
+      a {
+        color: inherit;
+      }
+      h2 {
+        align-self: flex-start;
+        font-family: 'Montserrat-Bold';
+        text-decoration: underline;
+        font-size: 3.15rem;
+        margin: 0 0 1rem 0;
+        z-index: 1000;
+      }
+      p {
+        font-family: 'Acumin';
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
+      span {
+        @include flex-container;
+        justify-content: flex-start;
+        h4,
+        h5 {
+          margin: 0.25rem 0;
+          font-size: 1.2rem;
+        }
+        h4 {
+          font-family: 'Acumin-Bold';
+          margin-right: 1rem;
+        }
+        h5 {
+          font-family: 'Acumin';
+          font-weight: 300;
+        }
+        i {
+          margin-top: 1rem;
+        }
+        &:last-of-type {
+          h4,
+          h5 {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 920px) {
+  .popup-wrapper {
+    max-width: 400px;
+  }
+}
+@media (max-width: 620px) {
+  .popup-wrapper {
+    max-width: 300px;
+    .close {
+      top: calc(-2rem - 3px);
+      right: calc(-2rem - 3px);
+      width: 4rem;
+      height: 4rem;
+      border-radius: 4rem;
+    }
+  }
+}
+@media (max-width: 420px) {
+  .popup-wrapper {
+    max-width: 220px;
+    border-width: 4px;
+    .close {
+      border-width: 4px;
+      top: calc(-2rem - 2px);
+      right: calc(-2rem - 2px);
+    }
+  }
+}

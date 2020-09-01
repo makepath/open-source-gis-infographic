@@ -1,0 +1,149 @@
+@import '../../styles/mixins';
+
+.home-tool {
+  @include flex-container;
+  width: 100%;
+  padding: 3.125rem 0 3.75rem 0;
+  position: relative;
+  .tool {
+    @include flex-container;
+    width: 100%;
+    padding: 1rem 0;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 3px;
+    margin-left: -4px;
+    margin-right: -4px;
+    .text {
+      @include flex-container;
+      justify-content: flex-start;
+      width: 100%;
+      max-width: 580px;
+      &.right {
+        justify-content: flex-end;
+      }
+    }
+    h2,
+    h3 {
+      font-family: 'Montserrat-Bold';
+      margin: 0;
+      white-space: nowrap;
+    }
+    h2 {
+      font-size: 2.5rem;
+      color: white;
+      margin: 0 1rem;
+    }
+    h3 {
+      color: #1f285c;
+      font-size: 1.75rem;
+    }
+    &.right {
+      margin-top: 14px;
+    }
+    &.vector {
+      background: linear-gradient(90deg, #e09f2d 30%, transparent 90%);
+      background-color: transparent;
+      border-top: 2px solid;
+      border-bottom: 2px solid;
+      border-image: linear-gradient(90deg, #e09f2d 0%, transparent 100%);
+      border-image-slice: 1;
+      &.right {
+        background: linear-gradient(-90deg, #e09f2d 30%, transparent 90%);
+        border-image-source: linear-gradient(-90deg, #e09f2d 0%, transparent 100%);
+      }
+      &.selected,
+      &:hover {
+        background-color: #e09f2d;
+      }
+    }
+    &.raster {
+      background: linear-gradient(90deg, #1fb5e8 30%, transparent 95%);
+      border-top: 2px solid;
+      border-bottom: 2px solid;
+      border-image: linear-gradient(90deg, #1fb5e8 0%, transparent 100%);
+      border-image-slice: 1;
+      &.right {
+        background: linear-gradient(-90deg, #1fb5e8 30%, transparent 95%);
+        border-image-source: linear-gradient(-90deg, #1fb5e8 0%, transparent 100%);
+      }
+      &.selected,
+      &:hover {
+        background-color: #1fb5e8;
+      }
+    }
+    &.both {
+      background: linear-gradient(90deg, #6fbf4e 30%, transparent 95%);
+      border-top: 2px solid;
+      border-bottom: 2px solid;
+      border-image: linear-gradient(90deg, #6fbf4e 0%, transparent 100%);
+      border-image-slice: 1;
+      &.right {
+        background: linear-gradient(-90deg, #6fbf4e 30%, transparent 95%);
+        border-image-source: linear-gradient(-90deg, #6fbf4e 0%, transparent 100%);
+      }
+      &.selected,
+      &:hover {
+        background-color: #6fbf4e;
+      }
+    }
+    &.other {
+      background: linear-gradient(90deg, #c63b96 30%, transparent 95%);
+      border-top: 2px solid;
+      border-bottom: 2px solid;
+      border-image: linear-gradient(90deg, #c63b96 0%, transparent 100%);
+      border-image-slice: 1;
+      &.right {
+        background: linear-gradient(-90deg, #c63b96 30%, transparent 95%);
+        border-image-source: linear-gradient(-90deg, #c63b96 0%, transparent 100%);
+      }
+      &.selected,
+      &:hover {
+        background-color: #c63b96;
+      }
+    }
+  }
+}
+@media (max-width: 920px) {
+  .home-tool {
+    padding: 3.125rem 0 3.5rem 0;
+    .tool {
+      padding: 0.5rem 0;
+      margin-top: 0;
+      .text {
+        max-width: 400px;
+      }
+      &.right {
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .home-tool {
+    padding: 3.125rem 0 3.25rem 0;
+    .tool {
+      .text {
+        max-width: 260px;
+      }
+      margin-top: 1px;
+      &.right {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .home-tool {
+    padding: 3.125rem 0 3.5rem 0;
+    .tool {
+      .text {
+        max-width: 200px;
+      }
+    }
+  }
+}

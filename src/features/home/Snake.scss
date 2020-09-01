@@ -1,0 +1,106 @@
+@import '../../styles/mixins';
+
+.snake-tail {
+  position: absolute;
+  top: -9.8rem;
+  width: 100%;
+  max-width: 900px;
+  height: 6.25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+}
+.snake-body {
+  position: absolute;
+  bottom: 3.75rem;
+  height: 198.25px;
+  width: 100%;
+  max-width: 900px;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+  &.right {
+    height: 211.04px;
+  }
+}
+.snake-head {
+  position: absolute;
+  bottom: -4.15rem;
+  height: 9.375rem;
+  width: 100%;
+  max-width: 900px;
+  background-repeat: no-repeat;
+  background-position: center;
+  &.right {
+    bottom: -4.35rem;
+  }
+}
+@media (max-width: 920px) {
+  .snake-tail {
+    top: -9.2rem;
+    max-width: 600px;
+  }
+  .snake-body {
+    max-width: 600px;
+    bottom: 3.5rem;
+    height: 133px;
+    &.right {
+      height: 140.7px;
+    }
+  }
+  .snake-head {
+    bottom: -2.85rem;
+    height: 7rem;
+    max-width: 600px;
+    &.right {
+      bottom: -3rem;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .snake-tail {
+    top: -8.9rem;
+    max-width: 400px;
+  }
+  .snake-body {
+    height: 88.1px;
+    max-width: 400px;
+    bottom: 3.25rem;
+    &.right {
+      height: 93.8px;
+    }
+  }
+  .snake-head {
+    bottom: -3.1rem;
+    height: 7rem;
+    max-width: 400px;
+    &.right {
+      bottom: -3.2rem;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .snake-tail {
+    top: -9.2rem;
+    max-width: 320px;
+  }
+  .snake-body {
+    height: 70.5px;
+    max-width: 320px;
+    bottom: 3.4rem;
+    &.right {
+      height: 75.04px;
+    }
+  }
+  .snake-head {
+    bottom: -3.1rem;
+    height: 7rem;
+    max-width: 320px;
+    &.right {
+      bottom: -3.2rem;
+    }
+  }
+}
+

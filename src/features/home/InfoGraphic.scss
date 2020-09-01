@@ -1,0 +1,146 @@
+@import '../../styles/mixins';
+
+.home-info-graphic {
+  background-color: #1f285c;
+  @include flex-column;
+  header,
+  footer {
+    @include flex-column;
+    width: 100%;
+    font-family: Acumin-Bold;
+    color: #353c46;
+    background-color: white;
+    padding: 1rem 0;
+    h2 {
+      font-size: 3rem;
+      line-height: 3rem;
+      margin: 0;
+      span {
+        color: #1fb5e8;
+      }
+    }
+    p {
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+  header {
+    border-bottom: 12px solid #1fb5e8;
+  }
+  footer {
+    margin-top: 6rem;
+    border-top: 12px solid #1fb5e8;
+  }
+  main {
+    @include flex-column;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 2rem 0 6rem 0;
+    h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      font-family: 'Acumin-Bold';
+    }
+    h3 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: normal;
+      font-family: 'Acumin';
+    }
+    .categories {
+      text-transform: uppercase;
+      @include flex-container;
+      justify-content: center;
+      margin: 1rem 0;
+      padding: 1rem 0;
+      width: 100%;
+      background-color: #1d3468;
+      h4 {
+        font-size: 1.5rem;
+        padding-top: 6px;
+        font-family: Acumin-Bold;
+        margin: 0 1rem 0 0;
+      }
+      .vector,
+      .raster,
+      .both,
+      .other {
+        font-size: 1rem;
+        font-family: Acumin-Bold;
+        color: white;
+        margin: 0 4px;
+        width: 6rem;
+        padding: 0.5rem 0 0.25rem 0;
+        text-transform: uppercase;
+        border: 4px solid transparent;
+        &:last-child {
+          margin-right: 12rem;
+        }
+      }
+      .vector {
+        background-color: #e09f2d;
+      }
+      .raster {
+        background-color: #1fb5e8;
+      }
+      .both {
+        background-color: #6fbf4e;
+      }
+      .other {
+        background-color: #c63b96;
+      }
+    }
+  }
+  .tools {
+    width: 100%;
+  }
+}
+@media (max-width: 920px) {
+  .home-info-graphic {
+    main {
+      padding: 2rem 0 4rem 0;
+      .categories {
+        .vector,
+        .raster,
+        .both,
+        .other {
+          &:last-child {
+            margin-right: 8rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 620px) {
+  .home-info-graphic {
+    header {
+      border-bottom: 8px solid #1fb5e8;
+    }
+    footer {
+      border-top: 8px solid #1fb5e8;
+    }
+    main {
+      .categories {
+        .vector,
+        .raster,
+        .both,
+        .other {
+          width: 5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .home-info-graphic {
+    header {
+      border-bottom: 4px solid #1fb5e8;
+    }
+    footer {
+      border-top: 4px solid #1fb5e8;
+    }
+  }
+}
