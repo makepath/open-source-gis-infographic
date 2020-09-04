@@ -1,2 +1,2 @@
 # Open Source GIS Infographic
-<iframe src="https://makepath.github.io/open-source-gis-infographic/" title="Open Source GIS Infographic">
+<img src="https://github.com/makepath/open-source-gis-infographic/blob/master/docs/screenshot.jpeg" alt="Open Source GIS Infographic">
