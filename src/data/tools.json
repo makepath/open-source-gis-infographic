@@ -154,6 +154,17 @@
     "developerQuote": ""
   },
   {
+    "name": "GeoRSS",
+    "url": "https://www.ogc.org/standards/georss",
+    "category": "vector",
+    "image": "https://www.turismo.gal/imaxes/mdaw/mtaw/~edisp/~extract/TURGA100631~1~staticrendition/tg_sinescalar.jpg",
+    "description": "GeoRSS is a live web feed that includes geographic features and locations and allows users to encode location data in an interoperable manner.",
+    "releaseYear": "2004",
+    "language": "N/A",
+    "creators": "Carl Reed and Associates, Mikel Maron, Tumblingwalls, Galdos, IBM",
+    "developerQuote": "\"There was a time when RSS was going to be the backbone of a distributed web of easy and automatic sharing and linking. RSS was extensible, so adding geo to it would make the whole web a map. I was inspired by a lot of very creative hacking in the wake of the dotcom bust. By the time we finished standardizing, the moment for GeoRSS had passed. Nowadays, GeoJSON is the transport format of choice.\" - Mikel Maron"
+  },
+  {
     "name": "NumPy",
     "url": "https://numpy.org/",
     "category": "both",
@@ -282,7 +293,7 @@
     "description": "HOT (Humanitarian OpenStreetMap Team) is an offshoot of OpenStreetMap focused on humanitarian work and community development and engagement. The map data provided by HOT is used to manage disasters and work towards ongoing sustainable goals.",
     "releaseYear": "2010",
     "language": "Javascript, Ruby",
-    "creators": "Steve Coast, Mikel Maron, OpenStreetMaps team",
+    "creators": "Mikel Maron, OpenStreetMap team",
     "developerQuote": "\"OpenStreetMap in 2005 was a crazy, barely working idea. Using OSM for humanitarian response was even crazier. After I got confused with so many new acronyms in the humanitarian system, it was clear we needed our own. Humanitarian OpenStreetMap Team, or HOT, was a bit of a joke name with a very serious mission. OSM is now the default map for humanitarian response, and HOT is a very active global organization and community.\" - Mikel Maron"
   },
   {
@@ -416,17 +427,6 @@
     "language": "Python",
     "creators": "Peter Wang, Jim Bednar",
     "developerQuote": ""
-  },
-  {
-    "name": "GeoRSS",
-    "url": "https://www.ogc.org/standards/georss",
-    "category": "vector",
-    "image": "https://www.turismo.gal/imaxes/mdaw/mtaw/~edisp/~extract/TURGA100631~1~staticrendition/tg_sinescalar.jpg",
-    "description": "GeoRSS is a live web feed that includes geographic features and locations and allows users to encode location data in an interoperable manner.",
-    "releaseYear": "2017",
-    "language": "N/A",
-    "creators": "Carl Reed and Associates, Mikel Maron, Tumblingwalls, Galdos, IBM",
-    "developerQuote": "\"There was a time when RSS was going to be the backbone of a distributed web of easy and automatic sharing and linking. RSS was extensible, so adding geo to it would make the whole web a map. I was inspired by a lot of very creative hacking in the wake of the dotcom bust. By the time we finished standardizing, the moment for GeoRSS had passed. Nowadays, GeoJSON is the transport format of choice.\" - Mikel Maron"
   },
   {
     "name": "H3",
