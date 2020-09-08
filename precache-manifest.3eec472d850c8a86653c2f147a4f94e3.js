@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "9debd37f66a9c09008f5",
-    "url": "/open-source-gis-infographic/static/css/main.40c98cd4.chunk.css"
+    "revision": "0b5fd7ef944269318cef",
+    "url": "/open-source-gis-infographic/static/css/main.07642dab.chunk.css"
   },
   {
-    "revision": "9debd37f66a9c09008f5",
-    "url": "/open-source-gis-infographic/static/js/main.9debd37f.chunk.js"
+    "revision": "0b5fd7ef944269318cef",
+    "url": "/open-source-gis-infographic/static/js/main.0b5fd7ef.chunk.js"
   },
   {
     "revision": "6198728e60ecd7e88c17",
@@ -40,19 +40,19 @@ self.__precacheManifest = [
     "url": "/open-source-gis-infographic/static/media/Montserrat-Bold.d3085f68.ttf"
   },
   {
-    "revision": "bdb37477b68d098317daaf939f295527",
-    "url": "/open-source-gis-infographic/static/media/Acumin-RPro.bdb37477.otf"
-  },
-  {
     "revision": "f55e6e6014f6e1692edbb46a156d65b6",
     "url": "/open-source-gis-infographic/static/media/Acumin-BdPro.f55e6e60.otf"
+  },
+  {
+    "revision": "bdb37477b68d098317daaf939f295527",
+    "url": "/open-source-gis-infographic/static/media/Acumin-RPro.bdb37477.otf"
   },
   {
     "revision": "c97fb91e7dd1c7b19ae67fb152a2e6b2",
     "url": "/open-source-gis-infographic/static/js/2.9cc5160a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1e322d76a29ccf9f6f82cf2e072fd2dd",
+    "revision": "7587f9f8971ed902c065449297cbd9d0",
     "url": "/open-source-gis-infographic/index.html"
   }
 ];
