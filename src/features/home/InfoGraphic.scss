@@ -5,7 +5,7 @@
   #github-fork-me {
     position: absolute;
     right: 0;
-    top: 6.95rem;
+    top: 0;
     img {
       width: 10rem;
       height: 10rem;
@@ -34,11 +34,11 @@
     }
   }
   header {
-    border-bottom: .75rem solid #1fb5e8;
+    border-bottom: 0.75rem solid #1fb5e8;
   }
   footer {
     margin-top: 6rem;
-    border-top: .75rem solid #1fb5e8;
+    border-top: 0.75rem solid #1fb5e8;
   }
   main {
     @include flex-column;
@@ -124,6 +124,12 @@
 }
 @media (max-width: 620px) {
   .home-info-graphic {
+    #github-fork-me {
+      img {
+        width: 12rem;
+        height: 12rem;
+      }
+    }
     main {
       .categories {
         .vector,
