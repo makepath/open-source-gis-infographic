@@ -2,6 +2,15 @@
 
 .home-info-graphic {
   background-color: #1f285c;
+  #github-fork-me {
+    position: absolute;
+    right: 0;
+    top: 0;
+    img {
+      width: 149px;
+      height: 149px;
+    }
+  }
   @include flex-column;
   header,
   footer {
@@ -115,6 +124,12 @@
 }
 @media (max-width: 620px) {
   .home-info-graphic {
+    #github-fork-me {
+      img {
+        width: 108px;
+        height: 108px;
+      }
+    }
     header {
       border-bottom: 8px solid #1fb5e8;
     }

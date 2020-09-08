@@ -70,6 +70,15 @@ export default class InfoGraphic extends Component {
 
     return (
       <div className="home-info-graphic">
+        <a id="github-fork-me" href="https://github.com/you">
+          <img
+            loading="lazy"
+            src="https://github.blog/wp-content/uploads/2008/12/forkme_right_orange_ff7600.png?resize=149%2C149"
+            class="attachment-full size-full"
+            alt="Fork me on GitHub"
+            data-recalc-dims="1"
+          />
+        </a>
         <header>
           <h2>
             make<span>path</span>
@@ -92,7 +101,11 @@ export default class InfoGraphic extends Component {
         </main>
         <div
           className="tools"
-          style={popupOpen && paddingBottom ? { paddingBottom: "20rem" } : { transition: '0.5s ease-in-out' }}
+          style={
+            popupOpen && paddingBottom
+              ? { paddingBottom: '20rem' }
+              : { transition: '0.5s ease-in-out' }
+          }
         >
           {tools.map((tool, index) => (
             <Tool
