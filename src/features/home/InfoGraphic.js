@@ -19,7 +19,7 @@ export default class InfoGraphic extends Component {
   }
 
   handleOpenPopup = (tool, side, offsets, last) => {
-    const scrollTop = { top: offsets.offsetTop, behavior: 'smooth' };
+    // const scrollTop = { top: offsets.offsetTop, behavior: 'smooth' };
     if (tool === this.state.selectedTool && this.state.popupOpen) {
       this.hanldeClosePopup();
     } else if (this.state.popupOpen) {
@@ -33,7 +33,7 @@ export default class InfoGraphic extends Component {
           popupOffsetTop: offsets.offsetTop,
           offsetHorizontal: offsets.offsetHorizontal,
         });
-        window.scrollTo({ ...scrollTop, top:  scrollTop.top - 250});
+        // window.scrollTo({ ...scrollTop, top:  scrollTop.top - 250});
       }, 400);
     } else {
       this.setState({
@@ -45,7 +45,7 @@ export default class InfoGraphic extends Component {
         offsetHorizontal: offsets.offsetHorizontal,
       });
       window.setTimeout(() => {
-        window.scrollTo({ ...scrollTop, top:  scrollTop.top - 250});
+        // window.scrollTo({ ...scrollTop, top:  scrollTop.top - 250});
       }, 10);
     }
   };
