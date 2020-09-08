@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/open-source-gis-infographic/precache-manifest.f3866b3172ffc6a0b248662394b35909.js"
+  "/open-source-gis-infographic/precache-manifest.bcc6deea8d53cafc447ec936e229661e.js"
 );
 
 workbox.clientsClaim();
