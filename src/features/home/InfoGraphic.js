@@ -70,7 +70,7 @@ export default class InfoGraphic extends Component {
 
     return (
       <div className="home-info-graphic">
-        <a id="github-fork-me" href="https://github.com/you">
+        <a id="github-fork-me" href="https://github.com/makepath/open-source-gis-infographic" target="#blank">
           <img
             loading="lazy"
             src="https://github.blog/wp-content/uploads/2008/12/forkme_right_orange_ff7600.png?resize=149%2C149"
