@@ -239,7 +239,7 @@
     "releaseYear": "2008",
     "language": "JavaScript",
     "creators": "Howard Butler,  Martin Daly, Allan Doyle, Sean Gillies, Tim Schaub, Christopher Schmidt",
-    "developerQuote": "\"I started contributing to open source with MapServer and GDAL back in 2002 when I discovered it was the only software capable of building the systems my job demanded at the time. I came to enjoy the camaraderie and common purpose those good projects exuded, and I learned over the years how to contribute in a way that matched my skills. Among other things, that evolved into writing a number of geospatial Python bits (you can thank/hate me for plenty of ogr.py and gdal.py) and helping to author a bit of the GeoJSON specification (you can thank/hate me for coordinate systems there).\" - Howard Butler via GeoHipster"
+    "developerQuote": ""
   },
   {
     "name": "GEOS",
@@ -249,7 +249,7 @@
     "description": "GEOS (Geometry Engine Open Source) is an alternative to JTS (Java Topography Suite) and is used to program with 2D geometries and spatial predicates. It serves as an underlying geometry implementation for many open source tools.",
     "releaseYear": "2008",
     "language": "C++",
-    "creators": "Sean Gillies",
+    "creators": "Refractions Research",
     "developerQuote": ""
   },
   {
