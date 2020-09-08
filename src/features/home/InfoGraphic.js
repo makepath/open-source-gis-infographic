@@ -85,7 +85,7 @@ export default class InfoGraphic extends Component {
             <img
               loading="lazy"
               src="https://github.blog/wp-content/uploads/2008/12/forkme_right_orange_ff7600.png?resize=149%2C149"
-              class="attachment-full size-full"
+              className="attachment-full size-full"
               alt="Fork me on GitHub"
               data-recalc-dims="1"
             />
