@@ -33,7 +33,7 @@ export default class InfoGraphic extends Component {
           popupOffsetTop: offsets.offsetTop,
           offsetHorizontal: offsets.offsetHorizontal,
         });
-        window.scrollTo(scrollTop);
+        window.scrollTo({ ...scrollTop, top:  scrollTop.top - 250});
       }, 400);
     } else {
       this.setState({
@@ -45,7 +45,7 @@ export default class InfoGraphic extends Component {
         offsetHorizontal: offsets.offsetHorizontal,
       });
       window.setTimeout(() => {
-        window.scrollTo(scrollTop);
+        window.scrollTo({ ...scrollTop, top:  scrollTop.top - 250});
       }, 10);
     }
   };
