@@ -14,8 +14,10 @@
     max-width: 100%;
     overflow: hidden;
     margin-top: 3px;
-    margin-left: -8px;
-    margin-right: -8px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-left-style: none !important;
+    border-right-style: none !important;
     .text {
       @include flex-container;
       justify-content: flex-start;
@@ -45,9 +47,6 @@
     }
     &.vector {
       background: linear-gradient(90deg, #e09f2d 30%, transparent 90%);
-      background-color: transparent;
-      border-top: 2px solid;
-      border-bottom: 2px solid;
       border-image: linear-gradient(90deg, #e09f2d 0%, transparent 100%);
       border-image-slice: 1;
       &.right {
@@ -61,8 +60,6 @@
     }
     &.raster {
       background: linear-gradient(90deg, #1fb5e8 30%, transparent 95%);
-      border-top: 2px solid;
-      border-bottom: 2px solid;
       border-image: linear-gradient(90deg, #1fb5e8 0%, transparent 100%);
       border-image-slice: 1;
       &.right {
@@ -76,8 +73,6 @@
     }
     &.both {
       background: linear-gradient(90deg, #6fbf4e 30%, transparent 95%);
-      border-top: 2px solid;
-      border-bottom: 2px solid;
       border-image: linear-gradient(90deg, #6fbf4e 0%, transparent 100%);
       border-image-slice: 1;
       &.right {
@@ -91,8 +86,6 @@
     }
     &.other {
       background: linear-gradient(90deg, #c63b96 30%, transparent 95%);
-      border-top: 2px solid;
-      border-bottom: 2px solid;
       border-image: linear-gradient(90deg, #c63b96 0%, transparent 100%);
       border-image-slice: 1;
       &.right {
