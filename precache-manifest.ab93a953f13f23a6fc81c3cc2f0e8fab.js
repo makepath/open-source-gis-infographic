@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "6795204f0b67d711186c",
-    "url": "/open-source-gis-infographic/static/css/main.ee978cac.chunk.css"
+    "revision": "1fa868fbf71d0de62759",
+    "url": "/open-source-gis-infographic/static/css/main.c4a0c633.chunk.css"
   },
   {
-    "revision": "6795204f0b67d711186c",
-    "url": "/open-source-gis-infographic/static/js/main.6795204f.chunk.js"
+    "revision": "1fa868fbf71d0de62759",
+    "url": "/open-source-gis-infographic/static/js/main.1fa868fb.chunk.js"
   },
   {
     "revision": "6198728e60ecd7e88c17",
@@ -36,12 +36,12 @@ self.__precacheManifest = [
     "url": "/open-source-gis-infographic/static/media/Right-Head.b01fa118.svg"
   },
   {
-    "revision": "bdb37477b68d098317daaf939f295527",
-    "url": "/open-source-gis-infographic/static/media/Acumin-RPro.bdb37477.otf"
-  },
-  {
     "revision": "f55e6e6014f6e1692edbb46a156d65b6",
     "url": "/open-source-gis-infographic/static/media/Acumin-BdPro.f55e6e60.otf"
+  },
+  {
+    "revision": "bdb37477b68d098317daaf939f295527",
+    "url": "/open-source-gis-infographic/static/media/Acumin-RPro.bdb37477.otf"
   },
   {
     "revision": "d3085f686df272f9e1a267cc69b2d24f",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/open-source-gis-infographic/static/js/2.9cc5160a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "35a031eda54b9ca159f9c7c6524ae16b",
+    "revision": "a84903871787aa912b315fe9314e1c7d",
     "url": "/open-source-gis-infographic/index.html"
   }
 ];
