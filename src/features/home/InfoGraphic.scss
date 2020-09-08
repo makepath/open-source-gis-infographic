@@ -5,10 +5,10 @@
   #github-fork-me {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 6.95rem;
     img {
-      width: 149px;
-      height: 149px;
+      width: 10rem;
+      height: 10rem;
     }
   }
   @include flex-column;
@@ -34,11 +34,11 @@
     }
   }
   header {
-    border-bottom: 12px solid #1fb5e8;
+    border-bottom: .75rem solid #1fb5e8;
   }
   footer {
     margin-top: 6rem;
-    border-top: 12px solid #1fb5e8;
+    border-top: .75rem solid #1fb5e8;
   }
   main {
     @include flex-column;
@@ -124,18 +124,6 @@
 }
 @media (max-width: 620px) {
   .home-info-graphic {
-    #github-fork-me {
-      img {
-        width: 108px;
-        height: 108px;
-      }
-    }
-    header {
-      border-bottom: 8px solid #1fb5e8;
-    }
-    footer {
-      border-top: 8px solid #1fb5e8;
-    }
     main {
       .categories {
         .vector,
@@ -145,17 +133,6 @@
           width: 5rem;
         }
       }
-    }
-  }
-}
-
-@media (max-width: 420px) {
-  .home-info-graphic {
-    header {
-      border-bottom: 4px solid #1fb5e8;
-    }
-    footer {
-      border-top: 4px solid #1fb5e8;
     }
   }
 }

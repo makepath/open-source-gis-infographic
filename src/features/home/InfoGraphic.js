@@ -70,15 +70,6 @@ export default class InfoGraphic extends Component {
 
     return (
       <div className="home-info-graphic">
-        <a id="github-fork-me" href="https://github.com/makepath/open-source-gis-infographic" target="#blank">
-          <img
-            loading="lazy"
-            src="https://github.blog/wp-content/uploads/2008/12/forkme_right_orange_ff7600.png?resize=149%2C149"
-            class="attachment-full size-full"
-            alt="Fork me on GitHub"
-            data-recalc-dims="1"
-          />
-        </a>
         <header>
           <h2>
             make<span>path</span>
@@ -86,6 +77,19 @@ export default class InfoGraphic extends Component {
           <p>Spatial Data Science. Your Way.</p>
         </header>
         <main>
+          <a
+            id="github-fork-me"
+            href="https://github.com/makepath/open-source-gis-infographic"
+            target="#blank"
+          >
+            <img
+              loading="lazy"
+              src="https://github.blog/wp-content/uploads/2008/12/forkme_right_orange_ff7600.png?resize=149%2C149"
+              class="attachment-full size-full"
+              alt="Fork me on GitHub"
+              data-recalc-dims="1"
+            />
+          </a>
           <h1>
             A History of
             <br /> Open Source GIS Tools
