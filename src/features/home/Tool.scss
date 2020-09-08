@@ -14,8 +14,8 @@
     max-width: 100%;
     overflow: hidden;
     margin-top: 3px;
-    margin-left: -4px;
-    margin-right: -4px;
+    margin-left: -8px;
+    margin-right: -8px;
     .text {
       @include flex-container;
       justify-content: flex-start;
