@@ -304,8 +304,8 @@
     "description": "Leaflet is used to create interactive maps and is accessible to users with a limited GIS background. It prides itself in “making the basic things work perfectly” and was designed to be the most mobile-friendly interactive mapping solution.",
     "releaseYear": "2011",
     "language": "JavaScript",
-    "creators": "Vladimir Agofonkin",
-    "developerQuote": "\"...everyone around me told me I would certainly fail in something that I really strongly believe in, so I'm like, “challenge accepted”, and I came up with a super plan. I decided to build the mapping software from scratch and didn't tell anyone about it. I started writing day and night... a couple weeks later when I had to present my results to my boss and company managers, I had a first version of my mapping API that was really lightweight and fast and easy use and looked pretty nice... when they saw it... they were absolutely blown away because... they never saw an interactive map working so fast in a web browser before.\" - Vladimir Agofonkin"
+    "creators": "Vladimir Agafonkin",
+    "developerQuote": "\"...everyone around me told me I would certainly fail in something that I really strongly believe in, so I'm like, “challenge accepted”, and I came up with a super plan. I decided to build the mapping software from scratch and didn't tell anyone about it. I started writing day and night... a couple weeks later when I had to present my results to my boss and company managers, I had a first version of my mapping API that was really lightweight and fast and easy use and looked pretty nice... when they saw it... they were absolutely blown away because... they never saw an interactive map working so fast in a web browser before.\" - Vladimir Agafonkin"
   },
   {
     "name": "Fiona",
