@@ -83,9 +83,8 @@
 
 @media (max-width: 420px) {
   .snake-tail {
-    top: -8.82rem;
+    top: -9.1rem;
     max-width: 310px;
-    margin-right: 2px;
   }
   .snake-body {
     height: 68.2px;
@@ -93,6 +92,7 @@
     bottom: 20px;
     &.right {
       height: 72.33px;
+      bottom: 19px;
     }
   }
   .snake-head {
