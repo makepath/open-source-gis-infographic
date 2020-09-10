@@ -38,8 +38,8 @@ export default class Tool extends Component {
               <h3>{releaseYear}</h3>
             </div>
           )}
+          <Snake side={side} first={first} last={last} />
         </div>
-        <Snake side={side} first={first} last={last} />
       </div>
     );
   }

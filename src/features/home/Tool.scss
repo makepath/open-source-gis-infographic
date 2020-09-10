@@ -4,15 +4,14 @@
   @include flex-container;
   width: 100%;
   padding: 2rem 0 5.5rem 0;
-  position: relative;
   .tool {
     @include flex-container;
+    position: relative;
     width: 100%;
     padding: 1rem 0;
     transition: 0.2s ease-in-out;
     cursor: pointer;
     max-width: 100%;
-    overflow: hidden;
     margin-left: -30px;
     margin-right: -30px;
     border-top: 2px solid;
