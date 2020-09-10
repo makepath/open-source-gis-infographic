@@ -20,7 +20,17 @@ export default class Tool extends Component {
   };
 
   render() {
-    const { side, name, category, releaseYear, first, last, openPopup, selected } = this.props;
+    const {
+      side,
+      name,
+      category,
+      releaseYear,
+      first,
+      last,
+      secondLast,
+      openPopup,
+      selected,
+    } = this.props;
     return (
       <div className="home-tool">
         <div
@@ -38,7 +48,7 @@ export default class Tool extends Component {
               <h3>{releaseYear}</h3>
             </div>
           )}
-          <Snake side={side} first={first} last={last} />
+          <Snake side={side} first={first} last={last} secondLast={secondLast} />
         </div>
       </div>
     );

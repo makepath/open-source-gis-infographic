@@ -120,6 +120,7 @@ export default class InfoGraphic extends Component {
               side={index % 2 === 0 ? 'left' : 'right'}
               first={index === 0}
               last={index === tools.length - 1}
+              secondLast={index === tools.length - 2}
               openPopup={this.handleOpenPopup}
               selected={tool.name === selectedTool && popupOpen}
             />
