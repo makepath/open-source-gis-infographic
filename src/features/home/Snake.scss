@@ -1,77 +1,72 @@
 @import '../../styles/mixins';
 
-.snake-tail {
+.snake-tail, .snake-body, .snake-head {
   position: absolute;
-  height: 18.5rem;
   width: 100%;
-  bottom: 5.5rem;
-  margin-right: 0.4rem;
+  left: 50%;
   background-repeat: no-repeat;
   background-position: center;
   pointer-events: none;
 }
-.snake-body {
-  position: absolute;
+
+.snake-tail {
+  height: 18.5rem;
   bottom: 5.5rem;
+  transform: translateX(calc(-50% - 0.2rem));
+}
+.snake-body {
   height: 100.5%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  pointer-events: none;
+  bottom: 5.5rem;
+  transform: translateX(calc(-50% - 0.1rem));
   &.right {
     height: 101%;
-    margin-left: 1.1rem;
+    transform: translateX(calc(-50% + 0.45rem));
   }
 }
 .snake-head {
-  position: absolute;
-  bottom: -1rem;
   height: 19.5rem;
-  margin-left: -0.9rem;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  pointer-events: none;
+  bottom: -1rem;
+  transform: translateX(calc(-50% - 0.5rem));
   &.right {
     bottom: -0.9rem;
     height: 20rem;
-    margin-left: 1rem;
+    transform: translateX(calc(-50% + 0.45rem));
   }
 }
 @media (max-width: 920px) {
   .snake-tail {
-    margin-right: 0.7rem;
+    transform: translateX(calc(-50% - 0.4rem));
   }
   .snake-head {
+    transform: translateX(calc(-50% - 0.5rem));
     &.right {
       bottom: -0.75rem;
-      margin-left: 0.75rem;
+      transform: translateX(calc(-50% + 0.25rem));
     }
   }
 }
 
 @media (max-width: 620px) {
   .snake-tail {
-    margin-right: -0.3rem;
+    transform: translateX(calc(-50% + 0.25rem));
     height: 19rem;
   }
   .snake-head {
     &.right {
-      margin-left: 0.25rem;
+      transform: translateX(calc(-50% + 0.1rem));
     }
   }
 }
 
 @media (max-width: 420px) {
   .snake-tail {
-    margin-right: -1.5rem;
+    transform: translateX(calc(-50% + 0.75rem));
     height: 20rem;
   }
   .snake-head {
     height: 20rem;
-    margin-left: -0.5rem;
     &.right {
-      margin-left: 0.25rem;
+      transform: translateX(calc(-50% - 0.1rem));
       height: 20.5rem;
     }
   }
