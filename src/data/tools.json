@@ -110,6 +110,17 @@
     "developerQuote": ""
   },
   {
+    "name": "GeoNetwork",
+    "url": "https://geonetwork-opensource.org/",
+    "category": "other",
+    "image": "",
+    "description": "GeoNetwork is a catalog application used to manage geospatial data. It supports geospatial metadata editing, search functions and interactive web map viewing.",
+    "releaseYear": "2001",
+    "language": "Java, XSLT, JavaScript, HTML",
+    "creators": "United Nations (FAO, WFP, and UNEP)",
+    "developerQuote": ""
+  },
+  {
     "name": "QGIS",
     "url": "https://qgis.org/en/site/",
     "category": "both",
@@ -273,6 +284,28 @@
     "language": "N/A",
     "creators": "Jon Nordling",
     "developerQuote": "\"Some of the impetus for GeoODK was that alternatives for collecting data at that time (around 2008) were not available. So Jon developed GeoODK which integrates with ODK for doing large scale surveys of developing nations. People have used ODK to be able to do large scale data collection projects that have a geo component.\" - (Based on Jon Nordling’s chat with makepath)"
+  },
+  {
+    "name": "MapStore",
+    "url": "https://mapstore.geo-solutions.it/mapstore/#/",
+    "category": "both",
+    "image": "",
+    "description": "MapStore is a WebGIS framework used to build web mapping applications and libraries. It supports map viewing, publishing, saving and secure sharing.",
+    "releaseYear": "2008",
+    "language": "JavaScript",
+    "creators": "The Open Planning Project (TOPP), GeoSolutions",
+    "developerQuote": ""
+  },
+  {
+    "name": "GeoNode",
+    "url": "https://geonode.org/",
+    "category": "other",
+    "image": "",
+    "description": "GeoNode is a content management system for managing and publishing geospatial data. It allows users to share data and create interactive maps.",
+    "releaseYear": "2008",
+    "language": "JavaScript, Python, HTML, CSS",
+    "creators": "World Bank (GFDRR), The Open Planning Project (TOPP)",
+    "developerQuote": ""
   },
   {
     "name": "PySAL",
