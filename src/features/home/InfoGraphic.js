@@ -74,7 +74,7 @@ export default class InfoGraphic extends Component {
           <h2>
             make<span>path</span>
           </h2>
-          <p>Spatial Data Science. Your Way.</p>
+          <p>Visualize what’s hiding in your data.</p>
         </header>
         <main>
           <a
@@ -138,7 +138,7 @@ export default class InfoGraphic extends Component {
           <h2>
             make<span>path</span>
           </h2>
-          <p>Spatial Data Science. Your Way.</p>
+          <p>Visualize what’s hiding in your data.</p>
         </footer>
       </div>
     );
