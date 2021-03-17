@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "1272d460901038d813b7",
-    "url": "/open-source-gis-infographic/static/css/main.8982634b.chunk.css"
+    "revision": "878eba64173a7f592cfd",
+    "url": "/open-source-gis-infographic/static/css/main.4cc906c3.chunk.css"
   },
   {
-    "revision": "1272d460901038d813b7",
-    "url": "/open-source-gis-infographic/static/js/main.1272d460.chunk.js"
+    "revision": "878eba64173a7f592cfd",
+    "url": "/open-source-gis-infographic/static/js/main.878eba64.chunk.js"
   },
   {
     "revision": "6198728e60ecd7e88c17",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/open-source-gis-infographic/static/js/2.ebce9999.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8ee894125dea379e41614dfd812f511a",
+    "revision": "74c69493d243eff2f3b524bf32bb1ae8",
     "url": "/open-source-gis-infographic/index.html"
   }
 ];
