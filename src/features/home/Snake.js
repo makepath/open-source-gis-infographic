@@ -9,7 +9,6 @@ export default class Snake extends Component {
     const snakeBody = require(`../../images/Loop-Snake.svg`);
     const snakeBodyRight = require(`../../images/Right-Snake.svg`);
     const snakeHead = require(`../../images/${side !== 'right' ? 'Right' : 'Left'}-Snake-Head.svg`);
-    console.log(first, side, last, secondLast)
     return (
       <Fragment>
         {first ? (
