@@ -18,6 +18,14 @@ export default class InfoGraphic extends Component {
     };
   }
 
+  componentDidMount() {
+    setTimeout(() => {
+      const message = { height: document.body.scrollHeight, width: document.body.scrollWidth }; 
+      // window.top refers to parent window
+      window.top.postMessage(message, "*");
+    }, 1000);
+  }
+
   handleOpenPopup = (tool, side, offsets, last) => {
     // const scrollTop = { top: offsets.offsetTop, behavior: 'smooth' };
     if (tool === this.state.selectedTool && this.state.popupOpen) {
