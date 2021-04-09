@@ -169,6 +169,17 @@
     "url": "http://www.saga-gis.org/",
     "category": "both",
     "image": "https://gisgeography.com/wp-content/uploads/2016/01/SAGA-3D-Mapping-Anaglyph.png",
+    "description": "OpenStreetMap (OSM) provides map data and editable maps of the world. It is supported by global mappers who contribute and maintain geodata.",
+    "releaseYear": "2004",
+    "language": "Python",
+    "creators": "Steve Coast",
+    "developerQuote": ""
+  },
+  {
+    "name": "OpenStreetMap",
+    "url": "https://www.openstreetmap.org/about",
+    "category": "both",
+    "image": "https://gisgeography.com/wp-content/uploads/2016/01/SAGA-3D-Mapping-Anaglyph.png",
     "description": "SAGA (System for Automated Geoscientific Analyses) is used to edit geospatial data and implement geospatial methods and algorithms, particularly for high-level apps. It is also very useful for terrain analysis.",
     "releaseYear": "2004",
     "language": "C++",
@@ -306,6 +317,17 @@
     "language": "N/A",
     "creators": "Jon Nordling",
     "developerQuote": "\"Some of the impetus for GeoODK was that alternatives for collecting data at that time (around 2008) were not available. So Jon developed GeoODK which integrates with ODK for doing large scale surveys of developing nations. People have used ODK to be able to do large scale data collection projects that have a geo component.\" - (Based on Jon Nordling’s chat with makepath)"
+  },
+  {
+    "name": "SpatialLite",
+    "url": "https://www.gaia-gis.it/fossil/libspatialite/index",
+    "category": "vector",
+    "image": null,
+    "description": "SpatiaLite is a spatial extension for the SQLite relational database management system. It supports vector geodatabase functionality, advanced spatial queries and multiple map projections.",
+    "releaseYear": "2008",
+    "language": "C++",
+    "creators": "Alessandro Furieri",
+    "developerQuote": ""
   },
   {
     "name": "MapStore",
