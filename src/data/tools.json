@@ -176,6 +176,17 @@
     "developerQuote": "\"There was a time when RSS was going to be the backbone of a distributed web of easy and automatic sharing and linking. RSS was extensible, so adding geo to it would make the whole web a map. I was inspired by a lot of very creative hacking in the wake of the dotcom bust. By the time we finished standardizing, the moment for GeoRSS had passed. Nowadays, GeoJSON is the transport format of choice.\" - Mikel Maron"
   },
   {
+    "name": "gvSIG",
+    "url": "http://www.gvsig.com/",
+    "category": "both",
+    "image": null,
+    "description": "gvSIG provides a suite of easy-to-use tools to manage, analyze and map spatial data. It works well with both vector and raster formats and ports to several external sources. It is valued for being compatible with a wide variety of GIS applications.",
+    "releaseYear": "2004",
+    "language": "Java",
+    "creators": "Regional Ministry of Infrastructures and Transport (CIT) of Valencia (Spain)",
+    "developerQuote": ""
+  },
+  {
     "name": "OpenStreetMap",
     "url": "https://www.openstreetmap.org/about",
     "category": "both",
