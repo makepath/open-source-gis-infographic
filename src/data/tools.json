@@ -99,6 +99,17 @@
     "developerQuote": ""
   },
   {
+    "name": "PostGIS",
+    "url": "http://postgis.net/",
+    "category": "both",
+    "image": "https://www.osgeo.org/wp-content/uploads/GeoServer.png",
+    "description": "PostGIS is a spatial extension for the PostgreSQL object-relational database syetm. It supports geographic objects for location queries.",
+    "releaseYear": "2001",
+    "language": "PL/pgSQL, C",
+    "creators": "Refractions Research, Paul Ramsey, Sandro Santilli, Regina Obe and many others.",
+    "developerQuote": ""
+  },
+  {
     "name": "KML",
     "url": "https://developers.google.com/kml",
     "category": "both",
