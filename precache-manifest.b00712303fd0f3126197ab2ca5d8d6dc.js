@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "8978b696250273fdd717",
-    "url": "/open-source-gis-infographic/static/css/main.4cc906c3.chunk.css"
+    "revision": "d1c680637635faf99bde",
+    "url": "/open-source-gis-infographic/static/css/main.39eaa388.chunk.css"
   },
   {
-    "revision": "8978b696250273fdd717",
-    "url": "/open-source-gis-infographic/static/js/main.8978b696.chunk.js"
+    "revision": "d1c680637635faf99bde",
+    "url": "/open-source-gis-infographic/static/js/main.d1c68063.chunk.js"
   },
   {
-    "revision": "6198728e60ecd7e88c17",
-    "url": "/open-source-gis-infographic/static/js/runtime~main.6198728e.js"
+    "revision": "9197c0c7248530ea544f",
+    "url": "/open-source-gis-infographic/static/js/runtime~main.9197c0c7.js"
   },
   {
-    "revision": "ebce9999b10d845ba8fb",
-    "url": "/open-source-gis-infographic/static/js/2.ebce9999.chunk.js"
+    "revision": "c8e0e152a090ef747af8",
+    "url": "/open-source-gis-infographic/static/js/2.c8e0e152.chunk.js"
   },
   {
     "revision": "ebf1b7c3ce667302c81e3907e36bdaaf",
@@ -36,23 +36,23 @@ self.__precacheManifest = [
     "url": "/open-source-gis-infographic/static/media/Right-Snake-Head.41545645.svg"
   },
   {
-    "revision": "f55e6e6014f6e1692edbb46a156d65b6",
-    "url": "/open-source-gis-infographic/static/media/Acumin-BdPro.f55e6e60.otf"
-  },
-  {
     "revision": "d3085f686df272f9e1a267cc69b2d24f",
     "url": "/open-source-gis-infographic/static/media/Montserrat-Bold.d3085f68.ttf"
+  },
+  {
+    "revision": "f55e6e6014f6e1692edbb46a156d65b6",
+    "url": "/open-source-gis-infographic/static/media/Acumin-BdPro.f55e6e60.otf"
   },
   {
     "revision": "bdb37477b68d098317daaf939f295527",
     "url": "/open-source-gis-infographic/static/media/Acumin-RPro.bdb37477.otf"
   },
   {
-    "revision": "c97fb91e7dd1c7b19ae67fb152a2e6b2",
-    "url": "/open-source-gis-infographic/static/js/2.ebce9999.chunk.js.LICENSE.txt"
+    "revision": "5b571a43117d7de158db9e221eaa0225",
+    "url": "/open-source-gis-infographic/static/js/2.c8e0e152.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e2b463184a544e9250a2f2ecd6ee08a2",
+    "revision": "d9dd523be8186b34cdf17f60824881dd",
     "url": "/open-source-gis-infographic/index.html"
   }
 ];
