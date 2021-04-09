@@ -36,16 +36,16 @@ self.__precacheManifest = [
     "url": "/open-source-gis-infographic/static/media/Right-Snake-Head.41545645.svg"
   },
   {
-    "revision": "bdb37477b68d098317daaf939f295527",
-    "url": "/open-source-gis-infographic/static/media/Acumin-RPro.bdb37477.otf"
-  },
-  {
     "revision": "d3085f686df272f9e1a267cc69b2d24f",
     "url": "/open-source-gis-infographic/static/media/Montserrat-Bold.d3085f68.ttf"
   },
   {
     "revision": "f55e6e6014f6e1692edbb46a156d65b6",
     "url": "/open-source-gis-infographic/static/media/Acumin-BdPro.f55e6e60.otf"
+  },
+  {
+    "revision": "bdb37477b68d098317daaf939f295527",
+    "url": "/open-source-gis-infographic/static/media/Acumin-RPro.bdb37477.otf"
   },
   {
     "revision": "5b571a43117d7de158db9e221eaa0225",
