@@ -484,6 +484,17 @@
     "developerQuote": ""
   },
   {
+    "name": "Mapbox GL JS",
+    "url": "https://docs.mapbox.com/mapbox-gl-js/api/",
+    "category": "both",
+    "image": null,
+    "description": "Mapbox GL JS comes with a great toolkit to create and display interactive maps on the web. It allows users to design customizable maps from vector tiles or JSON objects. As part of the Mapbox GL ecosystem, it is compatible with several desktop and mobile platforms.",
+    "releaseYear": "2014",
+    "language": "JavaScript",
+    "creators": "Mapbox",
+    "developerQuote": ""
+  },
+  {
     "name": "Xarray",
     "url": "http://xarray.pydata.org/en/stable/#",
     "category": "both",
