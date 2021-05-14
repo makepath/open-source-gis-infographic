@@ -1,7 +1,18 @@
 [
   {
+    "name": "CSV",
+    "url": "1) https://docs.mapbox.com/help/glossary/csv/",
+    "category": "other",
+    "image": null,
+    "description": "CSV (Comma Separated Values) files are one of the most widely used file formats. It stores tabular data as plain text (numbers, text and other characters) and each line of the file is a data record. ",
+    "releaseYear": "Early 1970s",
+    "language": "N/A",
+    "creators": "N/A",
+    "developerQuote": ""
+  },
+  {
     "name": "GRASS",
-    "url": "https://grass.osgeo.org/",
+    "url": "https://docs.mapbox.com/help/glossary/csv/",
     "category": "both",
     "image": "https://gisgeography.com/wp-content/uploads/2016/07/GRASS-GIS-logo-2.png",
     "description": "GRASS (Geographic Resources Analysis Support System) started out as a land management and environmental planning tool for the U.S. military. Since then it has become a popular tool for geospatial analysis and visualizations.",
@@ -33,6 +44,17 @@
     "developerQuote": ""
   },
   {
+    "name": "Shapefile (General)",
+    "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000280.shtml",
+    "category": "vector",
+    "image": null,
+    "description": "The shapefile format is used to store non-topological vector data and relevant attribute data. It consists of several subfile types which store different aspects of the data.",
+    "releaseYear": "Early 1990s",
+    "language": "N/A",
+    "creators": "Esri (Environmental Systems Research Institute)",
+    "developerQuote": ""
+  },
+  {
     "name": "MapServer",
     "url": "https://mapserver.org/",
     "category": "both",
@@ -55,14 +77,25 @@
     "developerQuote": ""
   },
   {
-    "name": "GeoTiff",
+    "name": "DEM",
+    "url": "https://library.carleton.ca/help/dem-formats",
+    "category": "raster",
+    "image": null,
+    "description": "DEM (Digital Elevation Model) file formats that contact either contain vector and/or raster data with an associated elevation value. ",
+    "releaseYear": "1995",
+    "language": "N/A",
+    "creators": "N/A",
+    "developerQuote": ""
+  },
+  {
+    "name": "GeoTIFF",
     "url": "https://www.ogc.org/standards/geotiff",
     "category": "raster",
     "image": "https://reference.wolfram.com/language/ref/format/Files/GeoTIFF.en/O_1.png",
     "description": "GeoTIFF (Geo Tagged Image File Format) is a file format that allows users to georeference data in TIFF files (which store raster images). It was originally created for use by NASA and is used to share geographic image data.",
     "releaseYear": "1995",
     "language": "N/A",
-    "creators": "Niles Ritter",
+    "creators": "N/A",
     "developerQuote": ""
   },
   {
@@ -187,6 +220,17 @@
     "developerQuote": ""
   },
   {
+    "name": "ICARTT",
+    "url": "https://earthdata.nasa.gov/esdis/eso/standards-and-references/icartt-file-format",
+    "category": "other",
+    "image": null,
+    "description": "ICARTT (International Consortium for Atmospheric Research on Transport and Transformation) file format is a text-based format used to share Geo data (especially airborne and atmospheric data). It consists of a header section (metadata) with critical data description information and a data section.",
+    "releaseYear": "2004",
+    "language": "N/A",
+    "creators": "Several government organizations including NASA and NOAA ",
+    "developerQuote": ""
+  },
+  {
     "name": "OpenStreetMap",
     "url": "https://www.openstreetmap.org/about",
     "category": "both",
@@ -195,6 +239,17 @@
     "releaseYear": "2004",
     "language": "C++",
     "creators": "Department of Physical Geography, University of Göttingen",
+    "developerQuote": ""
+  },
+  {
+    "name": "OSM",
+    "url": "https://wiki.openstreetmap.org/wiki/OSM_XML",
+    "category": "vector",
+    "image": null,
+    "description": "OSM (OpenStreetMap) is a file format that stores OSM (structured geographic data) data and makes it easy to send and received data over across the internet.",
+    "releaseYear": "2004",
+    "language": "XML",
+    "creators": "Steve Coast",
     "developerQuote": ""
   },
   {
@@ -396,6 +451,17 @@
     "developerQuote": ""
   },
   {
+    "name": "GeoTrellis",
+    "url": "https://geotrellis.io/",
+    "category": "both",
+    "image": null,
+    "description": "GeoTrellis supports the reading, writing and analysis of geospatial data for high performance applications.",
+    "releaseYear": "2011",
+    "language": "Scala",
+    "creators": "LocationTech, Azavea",
+    "developerQuote": ""
+  },
+  {
     "name": "Leaflet",
     "url": "https://leafletjs.com/",
     "category": "raster",
@@ -438,6 +504,17 @@
     "language": "Python",
     "creators": "Rob Story",
     "developerQuote": "\"At the time I was working at Vestas, a wind turbine manufacturer, and needed some libraries to help me build map visualizations for work. I didn't actually end up using Folium very much at Vestas, but started spending a lot of free time on it because it was a really fun project to tinker with. Fun fact: all of the examples are Portland and Mt Hood because that's where I live.\" - Rob Story"
+  },
+  {
+    "name": "GeoMesa",
+    "url": "https://www.geomesa.org/",
+    "category": "vector",
+    "image": "",
+    "description": "GeoMesa is a suite of tools that supports large-scale geospatial indexing and analysis of spatiotemporal data on distributed computing systems.",
+    "releaseYear": "2013",
+    "language": "Scala",
+    "creators": "LocationTech, CCRi",
+    "developerQuote": ""
   },
   {
     "name": "OpenDroneMap",
@@ -514,6 +591,28 @@
     "releaseYear": "2016",
     "language": "Python",
     "creators": "Peter Wang, Jim Bednar",
+    "developerQuote": ""
+  },
+  {
+    "name": "Raster Vision",
+    "url": "https://rastervision.io/",
+    "category": "both",
+    "image": null,
+    "description": "Raster Vision is a machine learning framework used to build computer vision models on GIS data, such as satellite, aerial, and large imagery datasets.",
+    "releaseYear": "2017",
+    "language": "Python",
+    "creators": "Azavea",
+    "developerQuote": ""
+  },
+  {
+    "name": "STAC",
+    "url": "https://stacspec.org/",
+    "category": "other",
+    "image": null,
+    "description": "The SpatioTemporal Asset Catalog (STAC) is a specification that provides a common language to describe different types of geospatial data, particularly spatiotemporal assets such as point clouds and data cubes.",
+    "releaseYear": "2017",
+    "language": "JavaScript",
+    "creators": "Chris Holmes and many others",
     "developerQuote": ""
   },
   {
