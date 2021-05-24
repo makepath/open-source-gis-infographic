@@ -1,80 +1,56 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import * as actions from './redux/actions';
 import Tool from './Tool';
 import ToolPopup from './ToolPopup';
 
-export default class InfoGraphic extends Component {
-  static propTypes = {};
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      tools: require('../../data/tools.json'),
-      popupOpen: false,
-      paddingBottom: false,
-      selectedTool: null,
-      selectedToolSide: null,
-      popupOffsetTop: null,
-      offsetHorizontal: null,
-    };
-  }
+export class InfoGraphic extends Component {
+  static propTypes = {
+    store: PropTypes.object.isRequired,
+    actions: PropTypes.object.isRequired,
+  };
 
   componentDidMount() {
+    this.props.actions.loadTools();
     setTimeout(() => {
-      const message = { height: document.body.scrollHeight, width: document.body.scrollWidth }; 
+      const message = { height: document.body.scrollHeight, width: document.body.scrollWidth };
       // window.top refers to parent window
-      window.top.postMessage(message, "*");
+      window.top.postMessage(message, '*');
     }, 1000);
   }
 
-  handleOpenPopup = (tool, side, offsets, last) => {
-    // const scrollTop = { top: offsets.offsetTop, behavior: 'smooth' };
-    if (tool === this.state.selectedTool && this.state.popupOpen) {
+  handleOpenPopup = (tool, side, offsets, isLast) => {
+    const { popupOpen, selectedTool } = this.props.store;
+    if (tool === selectedTool && popupOpen) {
       this.hanldeClosePopup();
-    } else if (this.state.popupOpen) {
+    } else if (popupOpen) {
       this.hanldeClosePopup();
       window.setTimeout(() => {
-        this.setState({
-          popupOpen: true,
-          paddingBottom: last,
-          selectedTool: tool,
-          selectedToolSide: side,
-          popupOffsetTop: offsets.offsetTop,
-          offsetHorizontal: offsets.offsetHorizontal,
-        });
-        // window.scrollTo({ ...scrollTop, top:  scrollTop.top - 250});
+        this.props.actions.openPopup(tool, side, offsets, isLast);
       }, 400);
     } else {
-      this.setState({
-        popupOpen: true,
-        paddingBottom: last,
-        selectedTool: tool,
-        selectedToolSide: side,
-        popupOffsetTop: offsets.offsetTop,
-        offsetHorizontal: offsets.offsetHorizontal,
-      });
-      window.setTimeout(() => {
-        // window.scrollTo({ ...scrollTop, top:  scrollTop.top - 250});
-      }, 10);
+      this.props.actions.openPopup(tool, side, offsets, isLast);
     }
   };
 
   hanldeClosePopup = () => {
-    this.setState({ popupOpen: false });
+    this.props.actions.closePopup();
   };
 
   render() {
     const {
       tools,
+      filteredTools,
       popupOpen,
       paddingBottom,
+      selectedToolInfo,
       selectedTool,
       selectedToolSide,
       popupOffsetTop,
       offsetHorizontal,
-    } = this.state;
-    const selectedToolInfo = selectedTool
-      ? tools.filter(tool => tool.name === selectedTool)[0]
-      : null;
+    } = this.props.store;
 
     return (
       <div className="home-info-graphic">
@@ -103,7 +79,7 @@ export default class InfoGraphic extends Component {
             <br /> Open Source GIS Tools
           </h1>
           <h3>Click on the name of the tool to learn more about it.</h3>
-          <div className="categories">
+          <div className="filters">
             <h4>Category</h4>
             <span className="vector">Vector</span>
             <span className="raster">Raster</span>
@@ -119,7 +95,7 @@ export default class InfoGraphic extends Component {
               : { transition: '0.5s ease-in-out' }
           }
         >
-          {tools.map((tool, index) => (
+          {filteredTools.map((tool, index) => (
             <Tool
               key={`${tool.name}-${tool.releaseYear}`}
               name={tool.name}
@@ -152,3 +128,19 @@ export default class InfoGraphic extends Component {
     );
   }
 }
+
+/* istanbul ignore next */
+function mapStateToProps(state) {
+  return {
+    store: state.store,
+  };
+}
+
+/* istanbul ignore next */
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators({ ...actions }, dispatch),
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(InfoGraphic);
