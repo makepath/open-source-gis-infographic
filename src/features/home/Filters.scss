@@ -1,5 +1,72 @@
 @import '../../styles/mixins';
 
-.home-filters {
-
+.filters {
+  @include flex-container;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 3rem 0;
+  padding-right: 8rem;
+  width: 100%;
+  background-color: #1d3468;
+  .MuiInputLabel-root {
+    text-transform: none;
+    color: white;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .search {
+    @include flex-column;
+    align-items: flex-start;
+    margin-right: 2rem;
+    margin-top: -1.5rem;
+    .MuiInputBase-root {
+      padding: 0.5rem;
+      padding-right: 2.5rem;
+      background-color: white;
+      border-radius: 0.5rem;
+      &:before,
+      &:after {
+        right: 0.24rem;
+        left: 0.24rem;
+      }
+    }
+  }
+  .categories {
+    @include flex-container;
+    h4 {
+      font-size: 1.5rem;
+      padding-top: 6px;
+      font-family: Acumin-Bold;
+      margin: 0 1rem 0 0;
+      text-transform: uppercase;
+    }
+    .vector,
+    .raster,
+    .both,
+    .other {
+      font-size: 1rem;
+      font-family: Acumin-Bold;
+      color: white;
+      margin: 0 4px;
+      width: 6rem;
+      padding: 0.5rem 0 0.25rem 0;
+      text-transform: uppercase;
+      border: 2px solid white;
+      &:last-child {
+        margin-right: 12rem;
+      }
+    }
+    .vector.selected {
+      background-color: #e09f2d;
+    }
+    .raster.selected {
+      background-color: #1fb5e8;
+    }
+    .both.selected {
+      background-color: #6fbf4e;
+    }
+    .other.selected {
+      background-color: #c63b96;
+    }
+  }
 }

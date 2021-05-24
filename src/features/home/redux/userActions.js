@@ -1,4 +1,4 @@
-import { OPEN_POPUP, CLOSE_POPUP } from './constants';
+import { OPEN_POPUP, CLOSE_POPUP, SET_SEARCH } from './constants';
 
 export function openPopup(tool, side, offsets, paddingBottom) {
   return {
@@ -13,6 +13,13 @@ export function openPopup(tool, side, offsets, paddingBottom) {
 export function closePopup() {
   return {
     type: CLOSE_POPUP,
+  };
+}
+
+export function setSearch(search) {
+  return {
+    type: SET_SEARCH,
+    search,
   };
 }
 
@@ -38,6 +45,15 @@ export function reducer(state, action) {
         ...state,
         popupOpen: false,
         paddingBottom: false,
+      };
+
+    case SET_SEARCH:
+      return {
+        ...state,
+        filters: {
+          ...state.filter,
+          search: action.search,
+        },
       };
 
     default:

@@ -1,14 +1,15 @@
 [
   {
     "name": "CSV",
-    "url": "1) https://docs.mapbox.com/help/glossary/csv/",
+    "url": "https://docs.mapbox.com/help/glossary/csv/",
     "category": "other",
     "image": null,
     "description": "CSV (Comma Separated Values) files are one of the most widely used file formats. It stores tabular data as plain text (numbers, text and other characters) and each line of the file is a data record. ",
     "releaseYear": "Early 1970s",
     "language": "N/A",
     "creators": "N/A",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": ["csv"]
   },
   {
     "name": "GRASS",
@@ -19,7 +20,8 @@
     "releaseYear": "1982",
     "language": "C, C++, Python",
     "creators": "U.S. Army Construction Engineering Research Laboratories",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "HDF",
@@ -30,7 +32,8 @@
     "releaseYear": "1988",
     "language": "N/A",
     "creators": "Tim Krauskopf, Gaige B. Paulsen, The HDF Group",
-    "developerQuote": "\"People don’t ask me about HDF very often and it is one of those things we did that turned out very well.\" - Tim Krauskopf"
+    "developerQuote": "\"People don’t ask me about HDF very often and it is one of those things we did that turned out very well.\" - Tim Krauskopf",
+    "fileFormats": []
   },
   {
     "name": "NetCDF",
@@ -41,7 +44,8 @@
     "releaseYear": "1989",
     "language": "N/A",
     "creators": "Unidata",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "Shapefile (General)",
@@ -52,7 +56,8 @@
     "releaseYear": "Early 1990s",
     "language": "N/A",
     "creators": "Esri (Environmental Systems Research Institute)",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "MapServer",
@@ -63,7 +68,8 @@
     "releaseYear": "1994",
     "language": "C, C++",
     "creators": "Steve Lime",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "OGC",
@@ -74,7 +80,8 @@
     "releaseYear": "1994",
     "language": "N/A",
     "creators": "N/A",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "DEM",
@@ -85,7 +92,8 @@
     "releaseYear": "1995",
     "language": "N/A",
     "creators": "N/A",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "GeoTIFF",
@@ -96,7 +104,8 @@
     "releaseYear": "1995",
     "language": "N/A",
     "creators": "N/A",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "GDAL",
@@ -107,7 +116,8 @@
     "releaseYear": "2000",
     "language": "C, C++, Python",
     "creators": "Frank Warmerdam",
-    "developerQuote": "\"It is in some ways a reincarnation of the proprietary GeoGateway library I created at PCI Geomatics in the 90's but it did not get much traction outside the company *because* it was proprietary. I picked writing a data translation library as a basis for consulting in large part because it was seen as a low prestige activity so folks were happy to have someone else do it!  It also grew a bit out of my collaboration on the GeoTIFF format efforts in earlier years (with Spot Image, and USGS), and the libgeotiff code that went with it. GRASS and MapServer were early applications using GDAL and really helped it's popularity.\" - Frank Warmerdam"
+    "developerQuote": "\"It is in some ways a reincarnation of the proprietary GeoGateway library I created at PCI Geomatics in the 90's but it did not get much traction outside the company *because* it was proprietary. I picked writing a data translation library as a basis for consulting in large part because it was seen as a low prestige activity so folks were happy to have someone else do it!  It also grew a bit out of my collaboration on the GeoTIFF format efforts in earlier years (with Spot Image, and USGS), and the libgeotiff code that went with it. GRASS and MapServer were early applications using GDAL and really helped it's popularity.\" - Frank Warmerdam",
+    "fileFormats": []
   },
   {
     "name": "GML",
@@ -118,7 +128,8 @@
     "releaseYear": "2000",
     "language": "XML",
     "creators": "Open Geospatial Consortium",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "GeoNetwork",
@@ -129,7 +140,8 @@
     "releaseYear": "2001",
     "language": "Java, XSLT, JavaScript, HTML",
     "creators": "United Nations (FAO, WFP, and UNEP)",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "GeoServer",
@@ -140,7 +152,8 @@
     "releaseYear": "2001",
     "language": "Java",
     "creators": "The Open Planning Project (TOPP)",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "KML",
@@ -151,7 +164,8 @@
     "releaseYear": "2001",
     "language": "XML",
     "creators": "Keyhole, Inc., Google",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "PostGIS",
@@ -162,7 +176,8 @@
     "releaseYear": "2001",
     "language": "PL/pgSQL, C",
     "creators": "Refractions Research, Paul Ramsey, Sandro Santilli, Regina Obe and many others.",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "QGIS",
@@ -173,7 +188,8 @@
     "releaseYear": "2002",
     "language": "C++, Python, Qt",
     "creators": "Gary Sherman",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "LAS",
@@ -184,7 +200,8 @@
     "releaseYear": "2003",
     "language": "N/A",
     "creators": "American Society for Photogrammetry and Remote Sensing",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "R-Spatial",
@@ -195,7 +212,8 @@
     "releaseYear": "2003",
     "language": "R",
     "creators": "Edzer Pebesma",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "GeoRSS",
@@ -206,7 +224,8 @@
     "releaseYear": "2004",
     "language": "N/A",
     "creators": "Carl Reed and Associates, Mikel Maron, Tumblingwalls, Galdos, IBM",
-    "developerQuote": "\"There was a time when RSS was going to be the backbone of a distributed web of easy and automatic sharing and linking. RSS was extensible, so adding geo to it would make the whole web a map. I was inspired by a lot of very creative hacking in the wake of the dotcom bust. By the time we finished standardizing, the moment for GeoRSS had passed. Nowadays, GeoJSON is the transport format of choice.\" - Mikel Maron"
+    "developerQuote": "\"There was a time when RSS was going to be the backbone of a distributed web of easy and automatic sharing and linking. RSS was extensible, so adding geo to it would make the whole web a map. I was inspired by a lot of very creative hacking in the wake of the dotcom bust. By the time we finished standardizing, the moment for GeoRSS had passed. Nowadays, GeoJSON is the transport format of choice.\" - Mikel Maron",
+    "fileFormats": []
   },
   {
     "name": "gvSIG",
@@ -217,7 +236,8 @@
     "releaseYear": "2004",
     "language": "Java",
     "creators": "Regional Ministry of Infrastructures and Transport (CIT) of Valencia (Spain)",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "ICARTT",
@@ -228,7 +248,8 @@
     "releaseYear": "2004",
     "language": "N/A",
     "creators": "Several government organizations including NASA and NOAA ",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "OpenStreetMap",
@@ -239,7 +260,8 @@
     "releaseYear": "2004",
     "language": "C++",
     "creators": "Department of Physical Geography, University of Göttingen",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "OSM",
@@ -250,7 +272,8 @@
     "releaseYear": "2004",
     "language": "XML",
     "creators": "Steve Coast",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "SAGA",
@@ -261,7 +284,8 @@
     "releaseYear": "2004",
     "language": "Python",
     "creators": "Steve Coast",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "NetworkX",
@@ -272,7 +296,8 @@
     "releaseYear": "2005",
     "language": "Python",
     "creators": "Aric Hagberg, Pieter Swart and Dan Schult",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "NumPy",
@@ -283,7 +308,8 @@
     "releaseYear": "2005",
     "language": "Python, C",
     "creators": "Travis Oliphant",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "GeoDjango",
@@ -294,7 +320,8 @@
     "releaseYear": "2006",
     "language": "Python",
     "creators": "Justin Bronn",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "MapShaper",
@@ -305,7 +332,8 @@
     "releaseYear": "2006",
     "language": "JavaScript",
     "creators": "Matthew Bloch",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "OpenLayers",
@@ -316,7 +344,8 @@
     "releaseYear": "2006",
     "language": "JavaScript",
     "creators": "MetaCarta",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "PyProj",
@@ -327,7 +356,8 @@
     "releaseYear": "2006",
     "language": "Python",
     "creators": "Jeff Whitaker",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "RTree",
@@ -338,7 +368,8 @@
     "releaseYear": "2007",
     "language": "Python",
     "creators": "Sean Gillies",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "GeoJSON",
@@ -349,7 +380,8 @@
     "releaseYear": "2008",
     "language": "JavaScript",
     "creators": "Howard Butler,  Martin Daly, Allan Doyle, Sean Gillies, Tim Schaub, Christopher Schmidt",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "GeoNode",
@@ -360,7 +392,8 @@
     "releaseYear": "2008",
     "language": "JavaScript, Python, HTML, CSS",
     "creators": "World Bank (GFDRR), The Open Planning Project (TOPP)",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "GeoODK",
@@ -371,7 +404,8 @@
     "releaseYear": "2008",
     "language": "N/A",
     "creators": "Jon Nordling",
-    "developerQuote": "\"Some of the impetus for GeoODK was that alternatives for collecting data at that time (around 2008) were not available. So Jon developed GeoODK which integrates with ODK for doing large scale surveys of developing nations. People have used ODK to be able to do large scale data collection projects that have a geo component.\" - (Based on Jon Nordling’s chat with makepath)"
+    "developerQuote": "\"Some of the impetus for GeoODK was that alternatives for collecting data at that time (around 2008) were not available. So Jon developed GeoODK which integrates with ODK for doing large scale surveys of developing nations. People have used ODK to be able to do large scale data collection projects that have a geo component.\" - (Based on Jon Nordling’s chat with makepath)",
+    "fileFormats": []
   },
   {
     "name": "GEOS",
@@ -382,7 +416,8 @@
     "releaseYear": "2008",
     "language": "C++",
     "creators": "Refractions Research",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "MapStore",
@@ -393,7 +428,8 @@
     "releaseYear": "2008",
     "language": "JavaScript",
     "creators": "The Open Planning Project (TOPP), GeoSolutions",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "Shapely",
@@ -404,7 +440,8 @@
     "releaseYear": "2008",
     "language": "Python",
     "creators": "Sean Gillies",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "SpatialLite",
@@ -415,7 +452,8 @@
     "releaseYear": "2008",
     "language": "C++",
     "creators": "Alessandro Furieri",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "HOT",
@@ -426,7 +464,8 @@
     "releaseYear": "2010",
     "language": "Javascript, Ruby",
     "creators": "Mikel Maron, OpenStreetMap team",
-    "developerQuote": "\"OpenStreetMap in 2005 was a crazy, barely working idea. Using OSM for humanitarian response was even crazier. After I got confused with so many new acronyms in the humanitarian system, it was clear we needed our own. Humanitarian OpenStreetMap Team, or HOT, was a bit of a joke name with a very serious mission. OSM is now the default map for humanitarian response, and HOT is a very active global organization and community.\" - Mikel Maron"
+    "developerQuote": "\"OpenStreetMap in 2005 was a crazy, barely working idea. Using OSM for humanitarian response was even crazier. After I got confused with so many new acronyms in the humanitarian system, it was clear we needed our own. Humanitarian OpenStreetMap Team, or HOT, was a bit of a joke name with a very serious mission. OSM is now the default map for humanitarian response, and HOT is a very active global organization and community.\" - Mikel Maron",
+    "fileFormats": []
   },
   {
     "name": "PySAL",
@@ -437,7 +476,8 @@
     "releaseYear": "2010",
     "language": "Python",
     "creators": "Luc Anselin, Sergio Ray",
-    "developerQuote": "\"The idea was to build a library of advanced spatial analytical functionality... And that is how PySAL was born. A second motivation for PySAL stemmed from the recognition that Python was starting to make inroads into other sciences...yet it had seen only limited adoption in regional science and geographical information science (GIS).\" - Sergio Rey"
+    "developerQuote": "\"The idea was to build a library of advanced spatial analytical functionality... And that is how PySAL was born. A second motivation for PySAL stemmed from the recognition that Python was starting to make inroads into other sciences...yet it had seen only limited adoption in regional science and geographical information science (GIS).\" - Sergio Rey",
+    "fileFormats": []
   },
   {
     "name": "Fiona",
@@ -448,7 +488,8 @@
     "releaseYear": "2011",
     "language": "Python",
     "creators": "Sean Gillies",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "GeoTrellis",
@@ -459,7 +500,8 @@
     "releaseYear": "2011",
     "language": "Scala",
     "creators": "LocationTech, Azavea",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "Leaflet",
@@ -470,7 +512,8 @@
     "releaseYear": "2011",
     "language": "JavaScript",
     "creators": "Vladimir Agafonkin",
-    "developerQuote": "\"...everyone around me told me I would certainly fail in something that I really strongly believe in, so I'm like, “challenge accepted”, and I came up with a super plan. I decided to build the mapping software from scratch and didn't tell anyone about it. I started writing day and night... a couple weeks later when I had to present my results to my boss and company managers, I had a first version of my mapping API that was really lightweight and fast and easy use and looked pretty nice... when they saw it... they were absolutely blown away because... they never saw an interactive map working so fast in a web browser before.\" - Vladimir Agafonkin"
+    "developerQuote": "\"...everyone around me told me I would certainly fail in something that I really strongly believe in, so I'm like, “challenge accepted”, and I came up with a super plan. I decided to build the mapping software from scratch and didn't tell anyone about it. I started writing day and night... a couple weeks later when I had to present my results to my boss and company managers, I had a first version of my mapping API that was really lightweight and fast and easy use and looked pretty nice... when they saw it... they were absolutely blown away because... they never saw an interactive map working so fast in a web browser before.\" - Vladimir Agafonkin",
+    "fileFormats": []
   },
   {
     "name": "CesiumJS",
@@ -481,7 +524,8 @@
     "releaseYear": "2012",
     "language": "JavaScript",
     "creators": "Patrick Cozzi, AGI Graphic Developers",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "Field Papers",
@@ -492,7 +536,8 @@
     "releaseYear": "2012",
     "language": "JavaScript, Ruby, C++, Python",
     "creators": "Mike Migurski, Stamen Design",
-    "developerQuote": "\"When Stamen created Field Papers in 2009 and presented it at the annual OpenStreetMap conference that year, we envisioned it as a component of a casual, low-tech mapping flow for use in OSM’s core areas of strength in Northern Europe and the United States. Then in 2010 volunteers used Field Papers after Haiti’s devastating earthquake. They opened our eyes to critical humanitarian applications of paper-based surveying and moved OSM as a whole into an entirely new range of uses in traditionally under-mapping areas.\" - Mike Migurski"
+    "developerQuote": "\"When Stamen created Field Papers in 2009 and presented it at the annual OpenStreetMap conference that year, we envisioned it as a component of a casual, low-tech mapping flow for use in OSM’s core areas of strength in Northern Europe and the United States. Then in 2010 volunteers used Field Papers after Haiti’s devastating earthquake. They opened our eyes to critical humanitarian applications of paper-based surveying and moved OSM as a whole into an entirely new range of uses in traditionally under-mapping areas.\" - Mike Migurski",
+    "fileFormats": []
   },
   {
     "name": "folium",
@@ -503,7 +548,8 @@
     "releaseYear": "2013",
     "language": "Python",
     "creators": "Rob Story",
-    "developerQuote": "\"At the time I was working at Vestas, a wind turbine manufacturer, and needed some libraries to help me build map visualizations for work. I didn't actually end up using Folium very much at Vestas, but started spending a lot of free time on it because it was a really fun project to tinker with. Fun fact: all of the examples are Portland and Mt Hood because that's where I live.\" - Rob Story"
+    "developerQuote": "\"At the time I was working at Vestas, a wind turbine manufacturer, and needed some libraries to help me build map visualizations for work. I didn't actually end up using Folium very much at Vestas, but started spending a lot of free time on it because it was a really fun project to tinker with. Fun fact: all of the examples are Portland and Mt Hood because that's where I live.\" - Rob Story",
+    "fileFormats": []
   },
   {
     "name": "GeoMesa",
@@ -514,7 +560,8 @@
     "releaseYear": "2013",
     "language": "Scala",
     "creators": "LocationTech, CCRi",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "OpenDroneMap",
@@ -525,7 +572,8 @@
     "releaseYear": "2013",
     "language": "Python, C++, JavaScript, Shell, Go",
     "creators": "Open Source Geospatial Foundation, Piero Toffanin",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "Rasterio",
@@ -536,7 +584,8 @@
     "releaseYear": "2013",
     "language": "Python",
     "creators": "Sean Gillies",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "Cartopy",
@@ -547,7 +596,8 @@
     "releaseYear": "2014",
     "language": "Python",
     "creators": "UK Met Office",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "GeoPackage",
@@ -558,7 +608,8 @@
     "releaseYear": "2014",
     "language": "N/A",
     "creators": "Open Geospatial Consortium, U.S. Military",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "GeoPandas",
@@ -569,7 +620,8 @@
     "releaseYear": "2014",
     "language": "Python",
     "creators": "Joris Van den Bossche",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "Xarray",
@@ -580,7 +632,8 @@
     "releaseYear": "2014",
     "language": "Python",
     "creators": "Stefan Hoyer, Alex Kleeman, Eugene Brevdo",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "Datashader",
@@ -591,7 +644,8 @@
     "releaseYear": "2016",
     "language": "Python",
     "creators": "Peter Wang, Jim Bednar",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "Raster Vision",
@@ -602,7 +656,8 @@
     "releaseYear": "2017",
     "language": "Python",
     "creators": "Azavea",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "STAC",
@@ -613,7 +668,8 @@
     "releaseYear": "2017",
     "language": "JavaScript",
     "creators": "Chris Holmes and many others",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "deck.gl",
@@ -624,7 +680,8 @@
     "releaseYear": "2018",
     "language": "Javascript",
     "creators": "Ib Green",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "H3",
@@ -635,7 +692,8 @@
     "releaseYear": "2018",
     "language": "C",
     "creators": "Isaac Brodsky",
-    "developerQuote": "\"H3 has made it possible to aggregate, process, and visualize geospatial big data, starting with dynamic pricing at Uber. Since being published as open source, H3 has helped in use cases ranging from wildfire analysis to videogames. H3 offers a way to join diverse datasets together and efficiently analyze them.\" - Isaac Brodsky"
+    "developerQuote": "\"H3 has made it possible to aggregate, process, and visualize geospatial big data, starting with dynamic pricing at Uber. Since being published as open source, H3 has helped in use cases ranging from wildfire analysis to videogames. H3 offers a way to join diverse datasets together and efficiently analyze them.\" - Isaac Brodsky",
+    "fileFormats": []
   },
   {
     "name": "kepler.gl",
@@ -646,7 +704,8 @@
     "releaseYear": "2018",
     "language": "Python",
     "creators": "Shan He",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "SpatialPandas",
@@ -657,7 +716,8 @@
     "releaseYear": "2019",
     "language": "Python",
     "creators": "Jon Mease",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   },
   {
     "name": "Xarray-Spatial",
@@ -668,6 +728,7 @@
     "releaseYear": "2020",
     "language": "Python",
     "creators": "makepath",
-    "developerQuote": ""
+    "developerQuote": "",
+    "fileFormats": []
   }
 ]
