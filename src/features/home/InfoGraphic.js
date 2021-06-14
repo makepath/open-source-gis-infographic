@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
-import Filters from './Filters';
 import Tool from './Tool';
 import ToolPopup from './ToolPopup';
 
@@ -80,7 +79,13 @@ export class InfoGraphic extends Component {
             <br /> Open Source GIS Tools
           </h1>
           <h3>Click on the name of the tool to learn more about it.</h3>
-          <Filters />
+          <div className="filters">
+            <h4>Category</h4>
+            <span className="vector">Vector</span>
+            <span className="raster">Raster</span>
+            <span className="both">Both</span>
+            <span className="other">Other</span>
+          </div>
         </main>
         <div
           className="tools"
@@ -98,8 +103,8 @@ export class InfoGraphic extends Component {
               releaseYear={tool.releaseYear}
               side={index % 2 === 0 ? 'left' : 'right'}
               first={index === 0}
-              last={index === filteredTools.length - 1}
-              secondLast={index === filteredTools.length - 2}
+              last={index === tools.length - 1}
+              secondLast={index === tools.length - 2}
               openPopup={this.handleOpenPopup}
               selected={tool.name === selectedTool && popupOpen}
             />

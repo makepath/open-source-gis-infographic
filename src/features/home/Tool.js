@@ -31,7 +31,6 @@ export default class Tool extends Component {
       openPopup,
       selected,
     } = this.props;
-    console.log(this.props);
     return (
       <div className="home-tool">
         <div

@@ -1,2 +1,2 @@
-export { loadTools, filterTools } from './dataManagement';
-export { openPopup, closePopup, setSearch } from './userActions';
+export { loadTools } from './dataManagement';
+export { openPopup, closePopup } from './userActions';
