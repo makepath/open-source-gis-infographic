@@ -13,7 +13,7 @@
   },
   {
     "name": "GRASS",
-    "url": "https://docs.mapbox.com/help/glossary/csv/",
+    "url": "https://grass.osgeo.org/",
     "category": "both",
     "image": "https://gisgeography.com/wp-content/uploads/2016/07/GRASS-GIS-logo-2.png",
     "description": "GRASS (Geographic Resources Analysis Support System) started out as a land management and environmental planning tool for the U.S. military. Since then it has become a popular tool for geospatial analysis and visualizations.",
