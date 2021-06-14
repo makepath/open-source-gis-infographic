@@ -1,7 +1,7 @@
 [
   {
     "name": "CSV",
-    "url": "1) https://docs.mapbox.com/help/glossary/csv/",
+    "url": "https://docs.mapbox.com/help/glossary/csv/",
     "category": "other",
     "image": null,
     "description": "CSV (Comma Separated Values) files are one of the most widely used file formats. It stores tabular data as plain text (numbers, text and other characters) and each line of the file is a data record. ",
