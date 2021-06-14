@@ -42,7 +42,6 @@ export class InfoGraphic extends Component {
 
   render() {
     const {
-      tools,
       filteredTools,
       popupOpen,
       paddingBottom,
@@ -93,9 +92,7 @@ export class InfoGraphic extends Component {
           {filteredTools.map((tool, index) => (
             <Tool
               key={`${tool.name}-${tool.releaseYear}`}
-              name={tool.name}
-              category={tool.category}
-              releaseYear={tool.releaseYear}
+              tool={tool}
               side={index % 2 === 0 ? 'left' : 'right'}
               first={index === 0}
               last={index === filteredTools.length - 1}

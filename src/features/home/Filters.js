@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
-import { TextField, InputLabel, Button } from '@material-ui/core';
+import { TextField, Button } from '@material-ui/core';
 import { Autocomplete } from '@material-ui/lab';
+import SearchIcon from '@material-ui/icons/Search';
 
 export class Filters extends Component {
   static propTypes = {
@@ -12,49 +13,59 @@ export class Filters extends Component {
     actions: PropTypes.object.isRequired,
   };
 
-  handleSearchInputChange = search => {
-    this.props.actions.setSearch(search);
+  handleSearchInputChange = value => {
+    this.props.actions.setSearch(value);
     this.props.actions.filterTools();
   };
 
-  handleCategoryClick = category => {};
+  handleCategoryClick = value => {
+    this.props.actions.setCategory(value);
+    this.props.actions.filterTools();
+  };
 
   render() {
-    const { tools, fileFormats } = this.props.store;
+    const { tools, filters } = this.props.store;
     return (
       <div className="filters">
         <div className="search">
-          <InputLabel>Filter by name:</InputLabel>
-          <Autocomplete
+          <TextField
             id="search"
-            options={tools}
-            getOptionLabel={option => option.name}
-            style={{ width: 300 }}
-            onInputChange={(event, value) => this.handleSearchInputChange(value)}
-            renderInput={params => (
-              <TextField {...params} placeholder="Type to filter" variant="filled" />
-            )}
+            placeholder="Search"
+            onChange={(event) => this.handleSearchInputChange(event.target.value)}
+            InputProps={{
+              disableUnderline: true,
+              endAdornment: <SearchIcon />,
+            }}
+            fullWidth={true}
           />
         </div>
         <div className="categories">
           <h4>Category</h4>
-          <Button className="vector">Vector</Button>
-          <Button className="raster">Raster</Button>
-          <Button className="both">Both</Button>
-          <Button className="other">Other</Button>
+          <Button
+            className={filters.categories.vector ? 'vector selected' : 'vector'}
+            onClick={() => this.handleCategoryClick('vector')}
+          >
+            Vector
+          </Button>
+          <Button
+            className={filters.categories.raster ? 'raster selected' : 'raster'}
+            onClick={() => this.handleCategoryClick('raster')}
+          >
+            Raster
+          </Button>
+          <Button
+            className={filters.categories.both ? 'both selected' : 'both'}
+            onClick={() => this.handleCategoryClick('both')}
+          >
+            Both
+          </Button>
+          <Button
+            className={filters.categories.other ? 'other selected' : 'other'}
+            onClick={() => this.handleCategoryClick('other')}
+          >
+            Other
+          </Button>
         </div>
-        {/*<div className="file-formats">
-          <InputLabel>File format:</InputLabel>
-          <Autocomplete
-            id="file-format"
-            options={fileFormats}
-            getOptionLabel={option => option}
-            style={{ width: 300 }}
-            renderInput={params => (
-              <TextField {...params} placeholder="Type to filter" variant="filled" />
-            )}
-          />
-        </div>*/}
       </div>
     );
   }

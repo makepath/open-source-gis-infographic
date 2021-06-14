@@ -31,10 +31,34 @@ export function reducer(state, action) {
       };
 
     case FILTER_TOOLS:
-      const filteredByName = state.tools.filter(tool => tool.name.toLowerCase().includes(state.filters.search.toLowerCase()));
+      let filteredTools = state.tools;
+      if (state.filters.search) {
+        filteredTools = filteredTools.filter(tool =>
+          tool.name.toLowerCase().includes(state.filters.search.toLowerCase()),
+        );
+      }
+      if (state.filters.categories) {
+        Object.entries(state.filters.categories).forEach(entry => {
+          if (entry[1]) {
+            filteredTools = filteredTools.filter(tool => tool.category === entry[0]);
+          }
+        });
+      }
+      if (state.filters.fileFormat) {
+        filteredTools = filteredTools.filter(tool => {
+          if (state.filters.fileFormat === 'GDAL supported formats') {
+            return tool.fileFormats.length >= 1;
+          } else {
+            return (
+              tool.fileFormats.includes(state.filters.fileFormat) ||
+              tool.fileFormats[0] === 'GDAL supported formats'
+            );
+          }
+        });
+      }
       return {
         ...state,
-        filteredTools: filteredByName,
+        filteredTools: filteredTools,
       };
 
     default:

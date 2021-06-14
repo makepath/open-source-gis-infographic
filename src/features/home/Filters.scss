@@ -1,36 +1,12 @@
 @import '../../styles/mixins';
 
 .filters {
-  @include flex-container;
+  @include flex-column;
   justify-content: center;
   margin: 1rem 0;
   padding: 3rem 0;
-  padding-right: 8rem;
   width: 100%;
   background-color: #1d3468;
-  .MuiInputLabel-root {
-    text-transform: none;
-    color: white;
-    margin-left: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-  .search {
-    @include flex-column;
-    align-items: flex-start;
-    margin-right: 2rem;
-    margin-top: -1.5rem;
-    .MuiInputBase-root {
-      padding: 0.5rem;
-      padding-right: 2.5rem;
-      background-color: white;
-      border-radius: 0.5rem;
-      &:before,
-      &:after {
-        right: 0.24rem;
-        left: 0.24rem;
-      }
-    }
-  }
   .categories {
     @include flex-container;
     h4 {
@@ -53,20 +29,64 @@
       text-transform: uppercase;
       border: 2px solid white;
       &:last-child {
-        margin-right: 12rem;
+        margin-right: 2rem;
       }
     }
-    .vector.selected {
-      background-color: #e09f2d;
+    .vector {
+      border-color: #e09f2d;
+      color: #e09f2d;
+      &.selected {
+        background-color: #e09f2d;
+        border-color: white;
+        color: white;
+      }
     }
-    .raster.selected {
-      background-color: #1fb5e8;
+    .raster {
+      border-color: #1fb5e8;
+      color: #1fb5e8;
+      &.selected {
+        background-color: #1fb5e8;
+        border-color: white;
+        color: white;
+      }
     }
-    .both.selected {
-      background-color: #6fbf4e;
+    .both {
+      border-color: #6fbf4e;
+      color: #6fbf4e;
+      &.selected {
+        background-color: #6fbf4e;
+        border-color: white;
+        color: white;
+      }
     }
-    .other.selected {
-      background-color: #c63b96;
+    .other {
+      border-color: #c63b96;
+      color: #c63b96;
+      &.selected {
+        background-color: #c63b96;
+        border-color: white;
+        color: white;
+      }
+    }
+  }
+  .search {
+    @include flex-column;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    background-color: #1f285c;
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    width: 90%;
+    max-width: 380px;
+    .MuiInputBase-root {
+      color: white;
+      input {
+        font-size: 2rem;
+      }
+      svg {
+        height: 2rem;
+        width: 2rem;
+      }
     }
   }
 }

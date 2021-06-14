@@ -33,6 +33,11 @@
     height: 328px;
     transform: translateX(calc(-50% - 2px));
   }
+  &.first {
+    bottom: -7.1rem;
+    height: 112px;
+    transform: translateX(calc(-50%));
+  }
 }
 @media (max-width: 920px) {
   .snake-tail {

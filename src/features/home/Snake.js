@@ -9,12 +9,13 @@ export default class Snake extends Component {
     const snakeBody = require(`../../images/Loop-Snake.svg`);
     const snakeBodyRight = require(`../../images/Right-Snake.svg`);
     const snakeHead = require(`../../images/${side !== 'right' ? 'Right' : 'Left'}-Snake-Head.svg`);
+    const snakeHeadFirst = require(`../../images/Right-Head.svg`);
     return (
       <Fragment>
         {first && last ? (
           <React.Fragment>
             <div style={{ backgroundImage: `url(${snakeTail}` }} className="snake-tail" />
-            <div style={{ backgroundImage: `url(${snakeHead}` }} className={`snake-head ${side}`} />
+            <div style={{ backgroundImage: `url(${snakeHeadFirst}` }} className={`snake-head first ${side}`} />
           </React.Fragment>
         ) : first ? (
           <div style={{ backgroundImage: `url(${snakeTail}` }} className="snake-tail" />

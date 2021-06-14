@@ -1,4 +1,4 @@
-import { OPEN_POPUP, CLOSE_POPUP, SET_SEARCH } from './constants';
+import { OPEN_POPUP, CLOSE_POPUP, SET_SEARCH, SET_CATEGORY, SET_FILE_FORMAT } from './constants';
 
 export function openPopup(tool, side, offsets, paddingBottom) {
   return {
@@ -20,6 +20,20 @@ export function setSearch(search) {
   return {
     type: SET_SEARCH,
     search,
+  };
+}
+
+export function setCategory(category) {
+  return {
+    type: SET_CATEGORY,
+    category,
+  };
+}
+
+export function setFileFormat(fileFormat) {
+  return {
+    type: SET_FILE_FORMAT,
+    fileFormat,
   };
 }
 
@@ -51,8 +65,29 @@ export function reducer(state, action) {
       return {
         ...state,
         filters: {
-          ...state.filter,
+          ...state.filters,
           search: action.search,
+        },
+      };
+
+    case SET_CATEGORY:
+      return {
+        ...state,
+        filters: {
+          ...state.filters,
+          categories: {
+            ...Object.entries(state.filters.categories).map(entry => false),
+            [action.category]: !state.filters.categories[action.category],
+          },
+        },
+      };
+
+    case SET_FILE_FORMAT:
+      return {
+        ...state,
+        filters: {
+          ...state.filters,
+          fileFormat: action.fileFormat,
         },
       };
 
