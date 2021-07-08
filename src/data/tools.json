@@ -208,6 +208,19 @@
     "fileFormats": ["GDAL supported formats"]
   },
   {
+    "name": "Java Topology Suite",
+    "url": "https://github.com/locationtech/jts",
+    "category": "vector",
+    "type": "",
+    "image": "",
+    "description": "The Java Topology Suite (JTS) is used to create and modify vector geometry. It provides users with geometry test cases and a GUI application to analyze and visualize geometry and JTS functions.",
+    "releaseYear": "2002",
+    "language": "Java",
+    "creators": "LocationTech",
+    "developerQuote": "",
+    "fileFormats": []
+  },
+  {
     "name": "LAS",
     "url": "https://www.ogc.org/standards/LAS#:~:text=The%20LAS%20file%20is%20intended,other)%20point%20cloud%20data%20records.&text=The%20intention%20of%20the%20data,data%20in%20a%20common%20format.",
     "category": "both",
