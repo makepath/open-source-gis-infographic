@@ -1,0 +1,109 @@
+@import '../../styles/mixins';
+
+.filters {
+  @include flex-column;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 3rem 0;
+  width: 100%;
+  background-color: #1d3468;
+  .categories {
+    @include flex-container;
+    h4 {
+      font-size: 1.5rem;
+      padding-top: 6px;
+      font-family: Acumin-Bold;
+      margin: 0 1rem 0 0;
+      text-transform: uppercase;
+    }
+    .vector,
+    .raster,
+    .both,
+    .other {
+      font-size: 1rem;
+      font-family: Acumin-Bold;
+      color: white;
+      margin: 4px 4px;
+      width: 6rem;
+      padding: 0.5rem 0 0.25rem 0;
+      text-transform: uppercase;
+      border: 2px solid white;
+      &:last-child {
+        margin-right: 2rem;
+      }
+    }
+    .vector {
+      border-color: #e09f2d;
+      color: #e09f2d;
+      &.selected {
+        background-color: #e09f2d;
+        border-color: white;
+        color: white;
+      }
+    }
+    .raster {
+      border-color: #1fb5e8;
+      color: #1fb5e8;
+      &.selected {
+        background-color: #1fb5e8;
+        border-color: white;
+        color: white;
+      }
+    }
+    .both {
+      border-color: #6fbf4e;
+      color: #6fbf4e;
+      &.selected {
+        background-color: #6fbf4e;
+        border-color: white;
+        color: white;
+      }
+    }
+    .other {
+      border-color: #c63b96;
+      color: #c63b96;
+      &.selected {
+        background-color: #c63b96;
+        border-color: white;
+        color: white;
+      }
+    }
+  }
+  .search {
+    @include flex-column;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    background-color: #1f285c;
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    width: 90%;
+    max-width: 380px;
+    .MuiInputBase-root {
+      color: white;
+      input {
+        font-size: 2rem;
+      }
+      svg {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .categories {
+    flex-wrap: wrap;
+    h4 {
+      width: 100%;
+      margin-bottom: 2rem !important;
+    }
+    .vector,
+    .raster,
+    .both,
+    .other {
+      font-size: 10px !important;
+      margin: 0 !important;
+    }
+  }
+}
