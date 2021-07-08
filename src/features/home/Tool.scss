@@ -125,6 +125,9 @@
       .text {
         max-width: 400px;
       }
+      .category {
+        font-size: 12px;
+      }
     }
   }
 }
@@ -147,6 +150,22 @@
     .tool {
       .text {
         max-width: 200px;
+      }
+      .category {
+        height: 17px;
+        border-width: 1px;
+        font-size: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .home-tool {
+    .tool {
+      .category {
+        height: 15px;
+        font-size: 6px;
       }
     }
   }

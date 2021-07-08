@@ -35,7 +35,9 @@
   }
   &.first {
     bottom: -7.1rem;
+    min-height: 112px;
     height: 112px;
+    min-width: 966px;
     transform: translateX(calc(-50%));
   }
 }
@@ -58,6 +60,10 @@
       height: 247px;
       transform: translateX(calc(-50% - 3px));
     }
+    &.first {
+      min-height: 85px;
+      height: 85px;
+    }
   }
 }
 
@@ -78,6 +84,13 @@
     &.right {
       height: 165px;
       transform: translateX(calc(-50% - 2px));
+    }
+    &.first {
+      bottom: -7.5rem;
+      min-height: 58px;
+      height: 58px;
+      transform: translateX(calc(-50% + 4px));
+      min-width: 620px;
     }
   }
 }
@@ -100,6 +113,12 @@
       height: 125px;
       transform: translateX(calc(-50% - 4px));
     }
+    &.first {
+      bottom: -7.8rem;
+      min-height: 45px;
+      height: 45px;
+      transform: translateX(calc(-50% + 4px));
+    }
   }
 }
 @media (max-width: 320px) {
@@ -120,6 +139,12 @@
     &.right {
       height: 105px;
       transform: translateX(calc(-50% - 3px));
+    }
+    &.first {
+      bottom: -7.6rem;
+      min-height: 37px;
+      height: 37px;
+      transform: translateX(calc(-50% + 3px));
     }
   }
 }

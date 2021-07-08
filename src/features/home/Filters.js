@@ -4,7 +4,6 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
 import { TextField, Button } from '@material-ui/core';
-import { Autocomplete } from '@material-ui/lab';
 import SearchIcon from '@material-ui/icons/Search';
 
 export class Filters extends Component {
@@ -24,7 +23,7 @@ export class Filters extends Component {
   };
 
   render() {
-    const { tools, filters } = this.props.store;
+    const { filters } = this.props.store;
     return (
       <div className="filters">
         <div className="search">

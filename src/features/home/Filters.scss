@@ -23,7 +23,7 @@
       font-size: 1rem;
       font-family: Acumin-Bold;
       color: white;
-      margin: 0 4px;
+      margin: 4px 4px;
       width: 6rem;
       padding: 0.5rem 0 0.25rem 0;
       text-transform: uppercase;
@@ -87,6 +87,23 @@
         height: 2rem;
         width: 2rem;
       }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .categories {
+    flex-wrap: wrap;
+    h4 {
+      width: 100%;
+      margin-bottom: 2rem !important;
+    }
+    .vector,
+    .raster,
+    .both,
+    .other {
+      font-size: 10px !important;
+      margin: 0 !important;
     }
   }
 }
