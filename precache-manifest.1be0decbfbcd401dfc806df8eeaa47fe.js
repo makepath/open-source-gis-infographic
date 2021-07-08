@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "b2ba43620c4f9f442f0e",
-    "url": "/open-source-gis-infographic/static/css/main.e942e11e.chunk.css"
+    "revision": "247938d9c4c4bfef29f6",
+    "url": "/open-source-gis-infographic/static/css/main.f66e7e3b.chunk.css"
   },
   {
-    "revision": "b2ba43620c4f9f442f0e",
-    "url": "/open-source-gis-infographic/static/js/main.b2ba4362.chunk.js"
+    "revision": "247938d9c4c4bfef29f6",
+    "url": "/open-source-gis-infographic/static/js/main.247938d9.chunk.js"
   },
   {
     "revision": "9197c0c7248530ea544f",
     "url": "/open-source-gis-infographic/static/js/runtime~main.9197c0c7.js"
   },
   {
-    "revision": "a5160123e6c509ce27c4",
-    "url": "/open-source-gis-infographic/static/js/2.a5160123.chunk.js"
+    "revision": "d78ca98c3ae3cf6dae96",
+    "url": "/open-source-gis-infographic/static/js/2.d78ca98c.chunk.js"
   },
   {
     "revision": "ebf1b7c3ce667302c81e3907e36bdaaf",
@@ -40,6 +40,10 @@ self.__precacheManifest = [
     "url": "/open-source-gis-infographic/static/media/Right-Head.b01fa118.svg"
   },
   {
+    "revision": "d3085f686df272f9e1a267cc69b2d24f",
+    "url": "/open-source-gis-infographic/static/media/Montserrat-Bold.d3085f68.ttf"
+  },
+  {
     "revision": "f55e6e6014f6e1692edbb46a156d65b6",
     "url": "/open-source-gis-infographic/static/media/Acumin-BdPro.f55e6e60.otf"
   },
@@ -48,15 +52,11 @@ self.__precacheManifest = [
     "url": "/open-source-gis-infographic/static/media/Acumin-RPro.bdb37477.otf"
   },
   {
-    "revision": "d3085f686df272f9e1a267cc69b2d24f",
-    "url": "/open-source-gis-infographic/static/media/Montserrat-Bold.d3085f68.ttf"
-  },
-  {
     "revision": "2a3a23bf878d7187dc1e20049a44e9ba",
-    "url": "/open-source-gis-infographic/static/js/2.a5160123.chunk.js.LICENSE.txt"
+    "url": "/open-source-gis-infographic/static/js/2.d78ca98c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0e1973ddeac619e880860052f3df4ea3",
+    "revision": "4ec3505505cf306311729bb91fbc9f60",
     "url": "/open-source-gis-infographic/index.html"
   }
 ];
