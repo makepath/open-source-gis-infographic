@@ -1,56 +1,80 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import * as actions from './redux/actions';
-import Filters from './Filters';
 import Tool from './Tool';
 import ToolPopup from './ToolPopup';
 
-export class InfoGraphic extends Component {
-  static propTypes = {
-    store: PropTypes.object.isRequired,
-    actions: PropTypes.object.isRequired,
-  };
+export default class InfoGraphic extends Component {
+  static propTypes = {};
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      tools: require('../../data/tools.json'),
+      popupOpen: false,
+      paddingBottom: false,
+      selectedTool: null,
+      selectedToolSide: null,
+      popupOffsetTop: null,
+      offsetHorizontal: null,
+    };
+  }
 
   componentDidMount() {
-    this.props.actions.loadTools();
     setTimeout(() => {
-      const message = { height: document.body.scrollHeight, width: document.body.scrollWidth };
+      const message = { height: document.body.scrollHeight, width: document.body.scrollWidth }; 
       // window.top refers to parent window
-      window.top.postMessage(message, '*');
+      window.top.postMessage(message, "*");
     }, 1000);
   }
 
-  handleOpenPopup = (tool, side, offsets, isLast) => {
-    const { popupOpen, selectedTool } = this.props.store;
-    if (tool === selectedTool && popupOpen) {
+  handleOpenPopup = (tool, side, offsets, last) => {
+    // const scrollTop = { top: offsets.offsetTop, behavior: 'smooth' };
+    if (tool === this.state.selectedTool && this.state.popupOpen) {
       this.hanldeClosePopup();
-    } else if (popupOpen) {
+    } else if (this.state.popupOpen) {
       this.hanldeClosePopup();
       window.setTimeout(() => {
-        this.props.actions.openPopup(tool, side, offsets, isLast);
+        this.setState({
+          popupOpen: true,
+          paddingBottom: last,
+          selectedTool: tool,
+          selectedToolSide: side,
+          popupOffsetTop: offsets.offsetTop,
+          offsetHorizontal: offsets.offsetHorizontal,
+        });
+        // window.scrollTo({ ...scrollTop, top:  scrollTop.top - 250});
       }, 400);
     } else {
-      this.props.actions.openPopup(tool, side, offsets, isLast);
+      this.setState({
+        popupOpen: true,
+        paddingBottom: last,
+        selectedTool: tool,
+        selectedToolSide: side,
+        popupOffsetTop: offsets.offsetTop,
+        offsetHorizontal: offsets.offsetHorizontal,
+      });
+      window.setTimeout(() => {
+        // window.scrollTo({ ...scrollTop, top:  scrollTop.top - 250});
+      }, 10);
     }
   };
 
   hanldeClosePopup = () => {
-    this.props.actions.closePopup();
+    this.setState({ popupOpen: false });
   };
 
   render() {
     const {
-      filteredTools,
+      tools,
       popupOpen,
       paddingBottom,
-      selectedToolInfo,
       selectedTool,
       selectedToolSide,
       popupOffsetTop,
       offsetHorizontal,
-    } = this.props.store;
+    } = this.state;
+    const selectedToolInfo = selectedTool
+      ? tools.filter(tool => tool.name === selectedTool)[0]
+      : null;
 
     return (
       <div className="home-info-graphic">
@@ -79,7 +103,13 @@ export class InfoGraphic extends Component {
             <br /> Open Source GIS Tools
           </h1>
           <h3>Click on the name of the tool to learn more about it.</h3>
-          <Filters />
+          <div className="categories">
+            <h4>Category</h4>
+            <span className="vector">Vector</span>
+            <span className="raster">Raster</span>
+            <span className="both">Both</span>
+            <span className="other">Other</span>
+          </div>
         </main>
         <div
           className="tools"
@@ -89,14 +119,16 @@ export class InfoGraphic extends Component {
               : { transition: '0.5s ease-in-out' }
           }
         >
-          {filteredTools.map((tool, index) => (
+          {tools.map((tool, index) => (
             <Tool
               key={`${tool.name}-${tool.releaseYear}`}
-              tool={tool}
+              name={tool.name}
+              category={tool.category}
+              releaseYear={tool.releaseYear}
               side={index % 2 === 0 ? 'left' : 'right'}
               first={index === 0}
-              last={index === filteredTools.length - 1}
-              secondLast={index === filteredTools.length - 2}
+              last={index === tools.length - 1}
+              secondLast={index === tools.length - 2}
               openPopup={this.handleOpenPopup}
               selected={tool.name === selectedTool && popupOpen}
             />
@@ -120,19 +152,3 @@ export class InfoGraphic extends Component {
     );
   }
 }
-
-/* istanbul ignore next */
-function mapStateToProps(state) {
-  return {
-    store: state.store,
-  };
-}
-
-/* istanbul ignore next */
-function mapDispatchToProps(dispatch) {
-  return {
-    actions: bindActionCreators({ ...actions }, dispatch),
-  };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(InfoGraphic);

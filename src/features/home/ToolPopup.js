@@ -15,7 +15,6 @@ export default class ToolPopup extends Component {
       description,
       releaseYear,
       language,
-      fileFormats,
       creators,
       developerQuote,
       closePopup,
@@ -74,12 +73,6 @@ export default class ToolPopup extends Component {
               <h4>Language(s):</h4>
               <h5>{language}</h5>
             </span>
-            {fileFormats && fileFormats.length > 0 ? (
-              <span>
-                <h4>File format(s):</h4>
-                <h5>{fileFormats.reduce((acc, curr) => (acc = acc + ' ' + curr), '')}</h5>
-              </span>
-            ) : null}
             <span>
               <h4>Creator(s):</h4>
               <h5>{creators}</h5>

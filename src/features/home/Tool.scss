@@ -44,12 +44,6 @@
       color: #1f285c;
       font-size: 1.75rem;
     }
-    .MuiChip-root {
-      background-color: #515151;
-      color: white;
-      border: 2px solid white;
-      margin: 0 0.33rem;
-    }
     &.right {
       margin-top: 0.75rem;
     }
@@ -65,9 +59,6 @@
       &:hover {
         background-color: #e09f2d;
       }
-      .category {
-        background-color: #e09f2d;
-      }
     }
     &.raster {
       background: linear-gradient(90deg, #1fb5e8 30%, transparent 95%);
@@ -79,9 +70,6 @@
       }
       &.selected,
       &:hover {
-        background-color: #1fb5e8;
-      }
-      .category {
         background-color: #1fb5e8;
       }
     }
@@ -97,9 +85,6 @@
       &:hover {
         background-color: #6fbf4e;
       }
-      .category {
-        background-color: #6fbf4e;
-      }
     }
     &.other {
       background: linear-gradient(90deg, #c63b96 30%, transparent 95%);
@@ -113,9 +98,6 @@
       &:hover {
         background-color: #c63b96;
       }
-      .category {
-        background-color: #c63b96;
-      }
     }
   }
 }
@@ -124,9 +106,6 @@
     .tool {
       .text {
         max-width: 400px;
-      }
-      .category {
-        font-size: 12px;
       }
     }
   }
@@ -139,9 +118,6 @@
         max-width: 260px;
       }
     }
-    .category {
-      height: 24px;
-    }
   }
 }
 
@@ -150,22 +126,6 @@
     .tool {
       .text {
         max-width: 200px;
-      }
-      .category {
-        height: 17px;
-        border-width: 1px;
-        font-size: 8px;
-      }
-    }
-  }
-}
-
-@media (max-width: 320px) {
-  .home-tool {
-    .tool {
-      .category {
-        height: 15px;
-        font-size: 6px;
       }
     }
   }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Snake from './Snake';
-import Chip from '@material-ui/core/Chip';
 
 export default class Tool extends Component {
   static propTypes = {};
@@ -21,25 +20,32 @@ export default class Tool extends Component {
   };
 
   render() {
-    const { side, tool, first, last, secondLast, openPopup, selected } = this.props;
-    const categoryLabel = tool.category.charAt(0).toUpperCase() + tool.category.slice(1);
+    const {
+      side,
+      name,
+      category,
+      releaseYear,
+      first,
+      last,
+      secondLast,
+      openPopup,
+      selected,
+    } = this.props;
     return (
       <div className="home-tool">
         <div
-          className={`tool ${side} ${tool.category}${selected ? ' selected' : ''}`}
-          onClick={event => openPopup(tool.name, side, this.getOffsets(event.target, side), last)}
+          className={`tool ${side} ${category}${selected ? ' selected' : ''}`}
+          onClick={event => openPopup(name, side, this.getOffsets(event.target, side), last)}
         >
           {side === 'left' ? (
             <div className="text left">
-              <h3>{tool.releaseYear}</h3>
-              <h2>{tool.name}</h2>
-              <Chip className="category" label={categoryLabel} />
+              <h3>{releaseYear}</h3>
+              <h2>{name}</h2>
             </div>
           ) : (
             <div className="text right">
-              <Chip className="category" label={categoryLabel} />
-              <h2>{tool.name}</h2>
-              <h3>{tool.releaseYear}</h3>
+              <h2>{name}</h2>
+              <h3>{releaseYear}</h3>
             </div>
           )}
           <Snake side={side} first={first} last={last} secondLast={secondLast} />
