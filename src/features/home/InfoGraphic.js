@@ -89,7 +89,8 @@ export class InfoGraphic extends Component {
               : { transition: '0.5s ease-in-out' }
           }
         >
-          {filteredTools.map((tool, index) => (
+          {filteredTools.length > 0 ? 
+            filteredTools.map((tool, index) => (
             <Tool
               key={`${tool.name}-${tool.releaseYear}`}
               tool={tool}
@@ -100,7 +101,7 @@ export class InfoGraphic extends Component {
               openPopup={this.handleOpenPopup}
               selected={tool.name === selectedTool && popupOpen}
             />
-          ))}
+          )) : <span class="nothing-found">No tools found</span>}
           <ToolPopup
             open={popupOpen}
             side={selectedToolSide}

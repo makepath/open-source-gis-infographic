@@ -61,6 +61,14 @@
   }
   .tools {
     width: 100%;
+    .nothing-found {
+      display: block;
+      color: white;
+      margin: auto;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
   }
 }
 @media (max-width: 920px) {
