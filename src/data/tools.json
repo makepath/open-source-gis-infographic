@@ -52,7 +52,7 @@
     "fileFormats": [".nc"]
   },
   {
-    "name": "Shapefile (General)",
+    "name": "Shapefile",
     "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000280.shtml",
     "category": "vector",
     "type": "File format",
@@ -208,7 +208,7 @@
     "fileFormats": ["GDAL supported formats"]
   },
   {
-    "name": "Java Topology Suite",
+    "name": "JTS",
     "url": "https://github.com/locationtech/jts",
     "category": "vector",
     "type": "",
