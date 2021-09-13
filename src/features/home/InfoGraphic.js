@@ -101,7 +101,7 @@ export class InfoGraphic extends Component {
               openPopup={this.handleOpenPopup}
               selected={tool.name === selectedTool && popupOpen}
             />
-          )) : <span class="nothing-found">No tools found</span>}
+          )) : <span className="nothing-found">No tools found</span>}
           <ToolPopup
             open={popupOpen}
             side={selectedToolSide}

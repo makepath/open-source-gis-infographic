@@ -1,150 +1,181 @@
 @import '../../styles/mixins';
-
 .snake-tail,
 .snake-body,
 .snake-head {
-  position: absolute;
-  width: 100%;
-  left: 50%;
-  bottom: -2px;
-  background-repeat: no-repeat;
-  background-position: center;
-  pointer-events: none;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: -2px;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
 }
 
 .snake-tail {
-  height: 310px;
-  transform: translateX(calc(-50% - 6px));
-}
-.snake-body {
-  height: 439px;
-  transform: translateX(-50%);
-  &.right {
-    height: 226px;
-    transform: translateX(calc(-50% + 2px));
-  }
-}
-.snake-head {
-  height: 315px;
-  bottom: -6.5rem;
-  transform: translateX(calc(-50% - 9px));
-  &.right {
-    bottom: -6.5rem;
-    height: 328px;
-    transform: translateX(calc(-50% - 2px));
-  }
-  &.first {
-    bottom: -7.1rem;
-    min-height: 112px;
-    height: 112px;
-    min-width: 966px;
-    transform: translateX(calc(-50%));
-  }
-}
-@media (max-width: 920px) {
-  .snake-tail {
-    height: 238px;
-    transform: translateX(calc(-50% - 1px));
-  }
-  .snake-body {
-    height: 332px;
-    &.right {
-      height: 171px;
-      transform: translateX(calc(-50% + 1px));
-    }
-  }
-  .snake-head {
-    height: 238px;
+    height: 310px;
     transform: translateX(calc(-50% - 6px));
+}
+
+.snake-body {
+    height: 439px;
+    transform: translateX(-50%);
     &.right {
-      height: 247px;
-      transform: translateX(calc(-50% - 3px));
+        height: 226px;
+        transform: translateX(calc(-50% + 2px));
+    }
+}
+
+.snake-head {
+    height: 315px;
+    bottom: -6.5rem;
+    transform: translateX(calc(-50% - 9px));
+    &.right {
+        bottom: -6.5rem;
+        height: 328px;
+        transform: translateX(calc(-50% - 2px));
     }
     &.first {
-      min-height: 85px;
-      height: 85px;
+        bottom: -7.1rem;
+        min-height: 112px;
+        height: 112px;
+        min-width: 966px;
+        transform: translateX(calc(-50%));
     }
-  }
+}
+
+@media (max-width: 920px) {
+    .snake-tail {
+        height: 238px;
+        transform: translateX(calc(-50% - 1px));
+    }
+    .snake-body {
+        height: 332px;
+        &.right {
+            height: 171px;
+            transform: translateX(calc(-50% + 1px));
+        }
+    }
+    .snake-head {
+        height: 238px;
+        transform: translateX(calc(-50% - 6px));
+        &.right {
+            height: 247px;
+            transform: translateX(calc(-50% - 3px));
+        }
+        &.first {
+            min-height: 85px;
+            height: 85px;
+        }
+    }
 }
 
 @media (max-width: 620px) {
-  .snake-tail {
-    height: 161px;
-    transform: translateX(calc(-50% + 1px));
-  }
-  .snake-body {
-    height: 223px;
-    &.right {
-      height: 115px;
+    .snake-tail {
+        height: 161px;
+        transform: translateX(calc(-50% + 1px));
     }
-  }
-  .snake-head {
-    height: 158px;
-    transform: translateX(calc(-50% - 2px));
-    &.right {
-      height: 165px;
-      transform: translateX(calc(-50% - 2px));
+    .snake-body {
+        height: 223px;
+        &.right {
+            height: 115px;
+        }
     }
-    &.first {
-      bottom: -7.5rem;
-      min-height: 58px;
-      height: 58px;
-      transform: translateX(calc(-50% + 4px));
-      min-width: 620px;
+    .snake-head {
+        height: 158px;
+        transform: translateX(calc(-50% - 2px));
+        &.right {
+            height: 165px;
+            transform: translateX(calc(-50% - 2px));
+        }
+        &.first {
+            bottom: -7.5rem;
+            min-height: 58px;
+            height: 58px;
+            transform: translateX(calc(-50% + 4px));
+            min-width: 620px;
+        }
     }
-  }
 }
 
 @media (max-width: 420px) {
-  .snake-tail {
-    height: 124px;
-    transform: translateX(calc(-50% + 1px));
-  }
-  .snake-body {
-    height: 171px;
-    &.right {
-      height: 88px;
+    .snake-tail {
+        height: 124px;
+        transform: translateX(calc(-50% + 1px));
     }
-  }
-  .snake-head {
-    height: 121px;
-    transform: translateX(calc(-50% - 1px));
-    &.right {
-      height: 125px;
-      transform: translateX(calc(-50% - 4px));
+    .snake-body {
+        height: 171px;
+        &.right {
+            height: 88px;
+        }
     }
-    &.first {
-      bottom: -7.8rem;
-      min-height: 45px;
-      height: 45px;
-      transform: translateX(calc(-50% + 4px));
+    .snake-head {
+        height: 121px;
+        transform: translateX(calc(-50% - 1px));
+        &.right {
+            height: 125px;
+            transform: translateX(calc(-50% - 4px));
+        }
+        &.first {
+            bottom: -7.8rem;
+            min-height: 45px;
+            height: 45px;
+            transform: translateX(calc(-50% + 4px));
+        }
     }
-  }
 }
+
 @media (max-width: 320px) {
-  .snake-tail {
-    height: 104px;
-    transform: translateX(calc(-50% + 3px));
-  }
-  .snake-body {
-    height: 142px;
-    &.right {
-      height: 74px;
-      transform: translateX(calc(-50% + 2px));
+    .snake-tail {
+        height: 104px;
+        transform: translateX(calc(-50% + 3px));
     }
-  }
-  .snake-head {
-    height: 101px;
-    transform: translateX(calc(-50% + 1px));
-    &.right {
-      height: 105px;
-      transform: translateX(calc(-50% - 3px));
+    .snake-body {
+        height: 142px;
+        &.right {
+            height: 74px;
+            transform: translateX(calc(-50% + 2px));
+        }
     }
-    &.first {
-      bottom: -7.6rem;
-      min-height: 37px;
-      height: 37px;
-      transform: translateX(calc(-50% + 3px));
+    .snake-head {
+        height: 101px;
+        transform: translateX(calc(-50% + 1px));
+        &.right {
+            height: 105px;
+            transform: translateX(calc(-50% - 3px));
+        }
+        &.first {
+            bottom: -7.6rem;
+            min-height: 37px;
+            height: 37px;
+            transform: translateX(calc(-50% + 3px));
+        }
     }
-  }
+}
+
+@media (max-width: 280px) {
+    .snake-tail {
+        height: 92px;
+        transform: translateX(calc(-50% + 4px));
+    }
+    .snake-body {
+        height: 125px;
+        &.right {
+            height: 65.3px;
+            transform: translateX(calc(-50% + 2px));
+        }
+    }
+    .snake-head {
+        height: 90px;
+        transform: translateX(calc(-50%));
+        &.right {
+            height: 95px;
+            transform: translateX(calc(-50% + 2px));
+        }
+        &.first {
+            bottom: -6.7rem;
+            min-height: 32px;
+            height: 32px;
+            transform: translateX(calc(-50% + 1px));
+        }
+    }
 }
