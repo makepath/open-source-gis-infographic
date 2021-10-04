@@ -234,14 +234,14 @@
     },
     {
         "name": "R-Spatial",
-        "url": "https://rspatial.org/",
+        "url": "https://r-spatial.org/",
         "category": "both",
         "type": "Library",
         "image": "https://www.sylvaindurand.org/img/carto/density.jpg",
-        "description": "R-Spatial is used to analyze geospatial data for spatial modeling purposes. It is similar to geopanda but for the R language and adds in spatial columns for dataframes.",
+        "description": "R-Spatial is an ecosystem of code and packages delevoped using R for working with and adding value to spatial data, including but not limited to sf, stars, mapview, gstat, spdep, raster and terra.",
         "releaseYear": "2003",
         "language": "R",
-        "creators": "Edzer Pebesma",
+        "creators": "R-Spatial community",
         "developerQuote": "",
         "fileFormats": []
     },
