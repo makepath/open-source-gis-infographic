@@ -238,7 +238,7 @@
         "category": "both",
         "type": "Library",
         "image": "https://www.sylvaindurand.org/img/carto/density.jpg",
-        "description": "R-Spatial is an ecosystem of code and packages delevoped using R for working with and adding value to spatial data, Packages include, but are not limited to, sf, stars, mapview, gstat, spdep, raster and terra.",
+        "description": "R-Spatial is an ecosystem of code and packages delevoped using R for working with and adding value to spatial data. Packages include, but are not limited to, sf, stars, mapview, gstat, spdep, raster and terra.",
         "releaseYear": "2003",
         "language": "R",
         "creators": "R-Spatial community",
