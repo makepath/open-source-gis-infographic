@@ -351,7 +351,7 @@
     },
     {
         "name": "GeoDjango",
-        "url": "https://docs.djangoproject.com/en/3.0/ref/contrib/gis/",
+        "url": "https://docs.djangoproject.com/en/4.0/",
         "category": "vector",
         "type": "Framework",
         "image": "https://img-a.udemycdn.com/course/750x422/305714_e8f2_3.jpg",
