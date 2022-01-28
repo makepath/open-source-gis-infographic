@@ -455,7 +455,7 @@
     },
     {
         "name": "GEOS",
-        "url": "https://trac.osgeo.org/geos/",
+        "url": "https://libgeos.org/",
         "category": "vector",
         "type": "Library",
         "image": "https://trac.osgeo.org/geos/chrome/site/geos.gif",
@@ -493,7 +493,7 @@
         "fileFormats": []
     },
     {
-        "name": "SpatialLite",
+        "name": "SpatiaLite",
         "url": "https://www.gaia-gis.it/fossil/libspatialite/index",
         "category": "vector",
         "type": "Database",
