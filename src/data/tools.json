@@ -455,7 +455,7 @@
     },
     {
         "name": "GEOS",
-        "url": "https://trac.osgeo.org/geos/",
+        "url": "https://libgeos.org/",
         "category": "vector",
         "type": "Library",
         "image": "https://trac.osgeo.org/geos/chrome/site/geos.gif",
@@ -493,7 +493,7 @@
         "fileFormats": []
     },
     {
-        "name": "SpatialLite",
+        "name": "SpatiaLite",
         "url": "https://www.gaia-gis.it/fossil/libspatialite/index",
         "category": "vector",
         "type": "Database",
@@ -803,6 +803,19 @@
         "creators": "Jon Mease",
         "developerQuote": "",
         "fileFormats": ["GDAL supported formats"]
+    },
+    {
+        "name": "pysheds",
+        "url": "https://github.com/mdbartos/pysheds",
+        "category": "both",
+        "type": "Library",
+        "image": "https://camo.githubusercontent.com/4ea763ad8540b11d8ffe8a29c30b293ea1dd0cfbf685c5170b27b8eae9f17c08/68747470733a2f2f707973686564732e73332e75732d656173742d322e616d617a6f6e6177732e636f6d2f696d672f64656d2e706e67",
+        "description": "pysheds provides simple and fast wastershed and stream network delineation. The hydrologic functions provided by pysheds are designed with speed in mind for expedited analysis of digital elevation models.",
+        "releaseYear": "2020",
+        "language": "Python",
+        "creators": "Matt Bartos",
+        "developerQuote": "",
+        "fileFormats": []
     },
     {
         "name": "Xarray-Spatial",
