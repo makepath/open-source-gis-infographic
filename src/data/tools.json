@@ -818,6 +818,19 @@
         "fileFormats": []
     },
     {
+        "name": "pydeck",
+        "url": "https://deckgl.readthedocs.io/en/latest/",
+        "category": "other",
+        "type": "Library",
+        "image": "https://deckgl.readthedocs.io/en/latest/_images/logo.svg",
+        "description": "pydeck provides high-scale spatial rendering to create beautiful, interactive visualizations in the browser.",
+        "releaseYear": "2020",
+        "language": "Python",
+        "creators": "Andrew Duberstein",
+        "developerQuote": "",
+        "fileFormats": []
+    },
+    {
         "name": "Xarray-Spatial",
         "url": "https://github.com/makepath/xarray-spatial",
         "category": "raster",
