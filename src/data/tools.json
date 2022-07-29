@@ -714,6 +714,19 @@
         "fileFormats": []
     },
     {
+        "name": "zarr",
+        "url": "https://zarr.readthedocs.io/en/stable/",
+        "category": "vector",
+        "type": "Library",
+        "image": "https://raw.githubusercontent.com/zarr-developers/community/main/logos/logo2.png",
+        "description": "Zarr is a format for storing chunked, compressed, N-dimensional arrays. This format can store arrays in memory, in files, and in cloud-based object storage.",
+        "releaseYear": "2015",
+        "language": "Python",
+        "creators": "Zarr Developers",
+        "developerQuote": "",
+        "fileFormats": []
+    },
+    {
         "name": "Datashader",
         "url": "https://datashader.org/",
         "category": "raster",
